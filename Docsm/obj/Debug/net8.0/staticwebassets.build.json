@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "zndkXvnhnMmOGc/sMB5zGpX3GbffM+RF4Ddqg9ey69o=",
+  "Source": "Docsm",
+  "BasePath": "_content/Docsm",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Docsm\\wwwroot",
+      "Source": "Docsm",
+      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\",
+      "BasePath": "_content/Docsm",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}
