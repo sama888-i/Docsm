@@ -4,7 +4,7 @@
     {
         Admin,
         Doctor,
-        User
+        Patient
 
     }
 }

@@ -156,3 +156,4 @@ C:\Users\Asus\source\repos\Docsm\Docsm\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\Asus\source\repos\Docsm\Docsm\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\Asus\source\repos\Docsm\Docsm\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Asus\source\repos\Docsm\Docsm\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Asus\source\repos\Docsm\Docsm\obj\Debug\net8.0\Docsm.sourcelink.json

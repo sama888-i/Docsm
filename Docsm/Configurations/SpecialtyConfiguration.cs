@@ -13,6 +13,8 @@ namespace Docsm.Configurations
             builder.Property(s => s.Name)
                 .IsRequired()
                 .HasMaxLength(128);
+            builder.Property(s => s.ImageUrl)
+                .HasMaxLength(388);
         }
     }
 }

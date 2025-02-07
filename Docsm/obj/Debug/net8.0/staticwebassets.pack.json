@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\yw5jj04g.ays.png",
+      "PackagePath": "staticwebassets\\images\\specialties\\yw5jj04g.ays.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Docsm.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Docsm.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Docsm.props",
+      "PackagePath": "build\\Docsm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Docsm.props",
+      "PackagePath": "buildMultiTargeting\\Docsm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Docsm.props",
+      "PackagePath": "buildTransitive\\Docsm.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zndkXvnhnMmOGc/sMB5zGpX3GbffM+RF4Ddqg9ey69o=",
+  "Hash": "aApnwCJ5VFix4SgTalFGqXPcAAC/UrY99ba0u28g+FU=",
   "Source": "Docsm",
   "BasePath": "_content/Docsm",
   "Mode": "Default",
@@ -15,6 +15,111 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\yw5jj04g.ays.png",
+      "SourceId": "Docsm",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\",
+      "BasePath": "_content/Docsm",
+      "RelativePath": "images/specialties/yw5jj04g.ays#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5533ugj6sp",
+      "Integrity": "qQBRjSBjXfV7YuU93qrghIFFeV2SGwoqYVYcu9EJ2bo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\specialties\\yw5jj04g.ays.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/specialties/yw5jj04g.ays.5533ugj6sp.png",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\yw5jj04g.ays.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2681"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qQBRjSBjXfV7YuU93qrghIFFeV2SGwoqYVYcu9EJ2bo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 20:36:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5533ugj6sp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/specialties/yw5jj04g.ays.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qQBRjSBjXfV7YuU93qrghIFFeV2SGwoqYVYcu9EJ2bo="
+        }
+      ]
+    },
+    {
+      "Route": "images/specialties/yw5jj04g.ays.png",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\yw5jj04g.ays.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2681"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qQBRjSBjXfV7YuU93qrghIFFeV2SGwoqYVYcu9EJ2bo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 20:36:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qQBRjSBjXfV7YuU93qrghIFFeV2SGwoqYVYcu9EJ2bo="
+        }
+      ]
+    }
+  ]
 }

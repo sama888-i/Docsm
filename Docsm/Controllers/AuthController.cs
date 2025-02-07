@@ -39,7 +39,7 @@ namespace Docsm.Controllers
             user=_mapper.Map<User>(dto);
             var result = await _userManager.CreateAsync(user, dto.Password);
             if (!result.Succeeded) return BadRequest(result.Errors);
-            await _userManager.AddToRoleAsync(user, nameof(Roles.User));
+            await _userManager.AddToRoleAsync(user, nameof(Roles.Patient ));
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             await _service.SendConfirmEmailAsync(user.Email,  token);
             return Ok(new{ Message = "User registered successfully"});
@@ -60,7 +60,7 @@ namespace Docsm.Controllers
                 if (result.IsNotAllowed)
                     ModelState.AddModelError("", "You must confirm your account");
                 if (result.IsLockedOut)
-                    ModelState.AddModelError("", "Wait untill" + user.LockoutEnd!.Value.ToString("yyyy-MM-dd HH:mm:ss"));
+                    ModelState.AddModelError("", "Wait until" + user.LockoutEnd!.Value.ToString("yyyy-MM-dd HH:mm:ss"));
                 return Unauthorized(new { message = "Username or Password is incorrect" });
             }
             var token = await _jwtTokens.GenerateJwtToken(user);
@@ -89,6 +89,38 @@ namespace Docsm.Controllers
             }
             return BadRequest("Token düzgün deyil.");
 
+        }
+        [HttpPost("ForgotPassword")]
+        public async Task<IActionResult>ForgotPassword(ForgotPasswordDto dto)
+        {
+            if (string.IsNullOrEmpty(dto.Email)) return BadRequest();
+            var user = await _userManager.FindByEmailAsync(dto.Email);
+            if (user == null)
+            {
+                throw new NotFoundException<User>();
+            }
+            await _service.SendResetPasswordAsync(user.Email);
+            return Ok("Emaile sifrenin sifirlanmasi ucun token gonderildi");
+        }
+        [HttpPost("ResetPassword")]
+        public async Task<IActionResult> ResetPassword(ResetPasswordDto dto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Məlumatlar düzgün deyil.");
+            }
+            var user = await _userManager.FindByEmailAsync(dto.Email);
+            if (user == null)
+            {
+                throw new NotFoundException<User>();
+            }
+            var result = await _userManager.ResetPasswordAsync(user, dto.Token, dto.NewPassword);
+            if (result.Succeeded)
+            {
+                return Ok("Şifrə uğurla sıfırlandı.");
+            }
+
+            return BadRequest("Şifrə sıfırlama uğursuz oldu.");
         }
     }
 }

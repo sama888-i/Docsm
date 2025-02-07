@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Docsm/images/specialties/yw5jj04g.ays.5533ugj6sp.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\specialties\yw5jj04g.ays.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5533ugj6sp"},{"Name":"integrity","Value":"sha256-qQBRjSBjXfV7YuU93qrghIFFeV2SGwoqYVYcu9EJ2bo="},{"Name":"label","Value":"_content/Docsm/images/specialties/yw5jj04g.ays.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2681"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022qQBRjSBjXfV7YuU93qrghIFFeV2SGwoqYVYcu9EJ2bo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 20:36:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Docsm/images/specialties/yw5jj04g.ays.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\specialties\yw5jj04g.ays.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qQBRjSBjXfV7YuU93qrghIFFeV2SGwoqYVYcu9EJ2bo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2681"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022qQBRjSBjXfV7YuU93qrghIFFeV2SGwoqYVYcu9EJ2bo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 20:36:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

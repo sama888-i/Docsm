@@ -5,6 +5,7 @@ namespace Docsm.Models
     public class Specialty:BaseEntity 
     {
         public string Name { get; set; }
+        public string? ImageUrl {  get; set; }  
         public IEnumerable<Doctor>? Doctors { get; set; }
     }
 }
