@@ -23,6 +23,8 @@ namespace Docsm
         {
            
             services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<ISpecialtyService, SpecialtyService>();
+            services.AddScoped<IDoctorService , DoctorService>();
             return services;
         }
 

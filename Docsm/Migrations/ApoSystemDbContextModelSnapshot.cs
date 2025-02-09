@@ -30,13 +30,29 @@ namespace Docsm.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("AboutMe")
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
                     b.Property<string>("Adress")
                         .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<string>("ClinicAddress")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("ClinicName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("DoctorStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -47,7 +63,11 @@ namespace Docsm.Migrations
                     b.Property<double>("Longitude")
                         .HasColumnType("float");
 
-                    b.Property<int>("SpecialtyId")
+                    b.Property<string>("Services")
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<int?>("SpecialtyId")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdateTime")
@@ -64,6 +84,34 @@ namespace Docsm.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Doctors");
+                });
+
+            modelBuilder.Entity("Docsm.Models.Patient", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Patients");
                 });
 
             modelBuilder.Entity("Docsm.Models.Specialty", b =>
@@ -324,16 +372,26 @@ namespace Docsm.Migrations
                     b.HasOne("Docsm.Models.Specialty", "Specialty")
                         .WithMany("Doctors")
                         .HasForeignKey("SpecialtyId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("Docsm.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.Navigation("Specialty");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Docsm.Models.Patient", b =>
+                {
                     b.HasOne("Docsm.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Specialty");
 
                     b.Navigation("User");
                 });
