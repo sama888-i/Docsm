@@ -25,6 +25,8 @@ namespace Docsm
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<ISpecialtyService, SpecialtyService>();
             services.AddScoped<IDoctorService , DoctorService>();
+            services.AddScoped<ITimeScheduleService ,TimeScheduleService>();
+            services.AddScoped<IAppointmentService ,AppointmentService>();
             return services;
         }
 

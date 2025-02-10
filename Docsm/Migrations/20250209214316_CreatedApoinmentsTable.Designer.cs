@@ -4,6 +4,7 @@ using Docsm.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Docsm.Migrations
 {
     [DbContext(typeof(ApoSystemDbContext))]
-    partial class ApoSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250209214316_CreatedApoinmentsTable")]
+    partial class CreatedApoinmentsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -123,44 +126,6 @@ namespace Docsm.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Doctors");
-                });
-
-            modelBuilder.Entity("Docsm.Models.DoctorTimeSchedule", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("DoctorId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("EndTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsAvailable")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("StartTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("UpdateTime")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DoctorId", "StartTime")
-                        .IsUnique()
-                        .HasFilter("[DoctorId] IS NOT NULL");
-
-                    b.ToTable("DoctorTimeSchedules");
                 });
 
             modelBuilder.Entity("Docsm.Models.Patient", b =>
@@ -481,16 +446,6 @@ namespace Docsm.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Docsm.Models.DoctorTimeSchedule", b =>
-                {
-                    b.HasOne("Docsm.Models.Doctor", "Doctor")
-                        .WithMany("TimeSchedules")
-                        .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.Navigation("Doctor");
-                });
-
             modelBuilder.Entity("Docsm.Models.Patient", b =>
                 {
                     b.HasOne("Docsm.Models.User", "User")
@@ -556,8 +511,6 @@ namespace Docsm.Migrations
             modelBuilder.Entity("Docsm.Models.Doctor", b =>
                 {
                     b.Navigation("Appointments");
-
-                    b.Navigation("TimeSchedules");
                 });
 
             modelBuilder.Entity("Docsm.Models.Patient", b =>

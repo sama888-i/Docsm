@@ -264,6 +264,75 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Docsm.Controllers.DoctorScheduleController",
+    "Method": "GetAllSpecialties",
+    "RelativePath": "api/DoctorSchedule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.DoctorScheduleController",
+    "Method": "Create",
+    "RelativePath": "api/DoctorSchedule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Docsm.DTOs.DoctorScheduleDtos.CreateScheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.DoctorScheduleController",
+    "Method": "Delete",
+    "RelativePath": "api/DoctorSchedule",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.DoctorScheduleController",
+    "Method": "Update",
+    "RelativePath": "api/DoctorSchedule",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "Docsm.DTOs.DoctorScheduleDtos.UpdateScheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Docsm.Controllers.SpecialtyController",
     "Method": "GetAllSpecialties",
     "RelativePath": "api/Specialty",

@@ -17,6 +17,8 @@ namespace Docsm.Models
         public double Latitude {  get; set; }
         public double Longitude { get; set; }
         public DoctorStatus DoctorStatus { get; set; }     
+        public ICollection<Appointment>? Appointments { get; set; }
+        public ICollection<DoctorTimeSchedule>? TimeSchedules{ get; set; }
 
 
     }

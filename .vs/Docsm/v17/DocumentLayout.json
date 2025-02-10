@@ -3,216 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\Docsm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\services\\implements\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\services\\implements\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\services\\implements\\timescheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\services\\implements\\timescheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\exceptions\\unauthorizedaccessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\exceptions\\unauthorizedaccessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\doctorscheduledtos\\createscheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\doctorscheduledtos\\createscheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\exceptions\\existexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\exceptions\\existexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\doctorscheduledtos\\getscheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\doctorscheduledtos\\getscheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\profiles\\doctorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\profiles\\doctorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\controllers\\doctorschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\controllers\\doctorschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\services\\implements\\specialtyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\services\\implements\\specialtyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\doctordtos\\doctorgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\doctordtos\\doctorgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\doctordtos\\doctorcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\doctordtos\\doctorcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\specialtydtos\\specialtygetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\specialtydtos\\specialtygetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\specialtydtos\\specialtycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\specialtydtos\\specialtycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\helpers\\jwttokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\helpers\\jwttokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\doctordtos\\doctorupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\doctordtos\\doctorupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\services\\interfaces\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\services\\interfaces\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\controllers\\specialtycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\controllers\\specialtycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\doctorscheduledtos\\updatescheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\doctorscheduledtos\\updatescheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\specialtydtos\\specialtyupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\specialtydtos\\specialtyupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\services\\implements\\specialtyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\services\\implements\\specialtyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\exceptions\\imageexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\exceptions\\imageexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\services\\interfaces\\itimescheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\services\\interfaces\\itimescheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\exceptions\\ibaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\exceptions\\ibaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\services\\interfaces\\ispecialtyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\services\\interfaces\\ispecialtyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\authdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\authdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\helpers\\enums\\status\\doctorstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\helpers\\enums\\status\\doctorstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\configurations\\doctorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\configurations\\doctorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dataaccess\\aposystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dataaccess\\aposystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\configurations\\patientconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\configurations\\patientconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\helpers\\enums\\status\\appointmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\helpers\\enums\\status\\appointmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\extensions\\fileexstension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\extensions\\fileexstension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\models\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\models\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\configurations\\specialtyconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\configurations\\specialtyconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\models\\specialty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\models\\specialty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\services\\implements\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\services\\implements\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\helpers\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\helpers\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\authdtos\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\authdtos\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\options\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\options\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\services\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\services\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\authdtos\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\authdtos\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\options\\smtpoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\options\\smtpoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\dtos\\authdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\dtos\\authdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\extensions\\seedexstension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\extensions\\seedexstension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\docsm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\docsm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\helpers\\enums\\genders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\helpers\\enums\\genders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\docsm.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\docsm.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\migrations\\20250205120328_createddoctorspecialtyanduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\migrations\\20250205120328_createddoctorspecialtyanduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|c:\\users\\asus\\source\\repos\\docsm\\docsm\\models\\doctortimeschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F728128-79B3-4639-A01E-33D96E9EAF98}|Docsm\\Docsm.csproj|solutionrelative:docsm\\models\\doctortimeschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -222,657 +46,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UnauthorizedAccessException.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\UnauthorizedAccessException.cs",
-              "RelativeDocumentMoniker": "Docsm\\Exceptions\\UnauthorizedAccessException.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\UnauthorizedAccessException.cs",
-              "RelativeToolTip": "Docsm\\Exceptions\\UnauthorizedAccessException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UpdateScheduleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorScheduleDtos\\UpdateScheduleDto.cs",
+              "RelativeDocumentMoniker": "Docsm\\DTOs\\DoctorScheduleDtos\\UpdateScheduleDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorScheduleDtos\\UpdateScheduleDto.cs",
+              "RelativeToolTip": "Docsm\\DTOs\\DoctorScheduleDtos\\UpdateScheduleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T12:08:00.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T18:04:58.152Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DoctorService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Implements\\DoctorService.cs",
-              "RelativeDocumentMoniker": "Docsm\\Services\\Implements\\DoctorService.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Implements\\DoctorService.cs",
-              "RelativeToolTip": "Docsm\\Services\\Implements\\DoctorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABUAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "DoctorTimeSchedule.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\DoctorTimeSchedule.cs",
+              "RelativeDocumentMoniker": "Docsm\\Models\\DoctorTimeSchedule.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\DoctorTimeSchedule.cs",
+              "RelativeToolTip": "Docsm\\Models\\DoctorTimeSchedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T19:15:19.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SpecialtyGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\SpecialtyDtos\\SpecialtyGetDto.cs",
-              "RelativeDocumentMoniker": "Docsm\\DTOs\\SpecialtyDtos\\SpecialtyGetDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\SpecialtyDtos\\SpecialtyGetDto.cs",
-              "RelativeToolTip": "Docsm\\DTOs\\SpecialtyDtos\\SpecialtyGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T19:46:56.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DoctorGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorDtos\\DoctorGetDto.cs",
-              "RelativeDocumentMoniker": "Docsm\\DTOs\\DoctorDtos\\DoctorGetDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorDtos\\DoctorGetDto.cs",
-              "RelativeToolTip": "Docsm\\DTOs\\DoctorDtos\\DoctorGetDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T20:29:33.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T16:49:33.908Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "DoctorCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorDtos\\DoctorCreateDto.cs",
-              "RelativeDocumentMoniker": "Docsm\\DTOs\\DoctorDtos\\DoctorCreateDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorDtos\\DoctorCreateDto.cs",
-              "RelativeToolTip": "Docsm\\DTOs\\DoctorDtos\\DoctorCreateDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T17:40:25.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "SpecialtyService.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Implements\\SpecialtyService.cs",
               "RelativeDocumentMoniker": "Docsm\\Services\\Implements\\SpecialtyService.cs",
               "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Implements\\SpecialtyService.cs",
               "RelativeToolTip": "Docsm\\Services\\Implements\\SpecialtyService.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAgwBYAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T18:21:29.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T16:42:30.077Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ExistException.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\ExistException.cs",
-              "RelativeDocumentMoniker": "Docsm\\Exceptions\\ExistException.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\ExistException.cs",
-              "RelativeToolTip": "Docsm\\Exceptions\\ExistException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Title": "GetScheduleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorScheduleDtos\\GetScheduleDto.cs",
+              "RelativeDocumentMoniker": "Docsm\\DTOs\\DoctorScheduleDtos\\GetScheduleDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorScheduleDtos\\GetScheduleDto.cs",
+              "RelativeToolTip": "Docsm\\DTOs\\DoctorScheduleDtos\\GetScheduleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:05:31.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T16:37:28.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SpecialtyCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\SpecialtyDtos\\SpecialtyCreateDto.cs",
-              "RelativeDocumentMoniker": "Docsm\\DTOs\\SpecialtyDtos\\SpecialtyCreateDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\SpecialtyDtos\\SpecialtyCreateDto.cs",
-              "RelativeToolTip": "Docsm\\DTOs\\SpecialtyDtos\\SpecialtyCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CreateScheduleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorScheduleDtos\\CreateScheduleDto.cs",
+              "RelativeDocumentMoniker": "Docsm\\DTOs\\DoctorScheduleDtos\\CreateScheduleDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorScheduleDtos\\CreateScheduleDto.cs",
+              "RelativeToolTip": "Docsm\\DTOs\\DoctorScheduleDtos\\CreateScheduleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T15:25:19.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T16:28:36.399Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Program.cs",
-              "RelativeDocumentMoniker": "Docsm\\Program.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Program.cs",
-              "RelativeToolTip": "Docsm\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAQwEIAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TimeScheduleService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Implements\\TimeScheduleService.cs",
+              "RelativeDocumentMoniker": "Docsm\\Services\\Implements\\TimeScheduleService.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Implements\\TimeScheduleService.cs",
+              "RelativeToolTip": "Docsm\\Services\\Implements\\TimeScheduleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T10:27:41.204Z",
+              "WhenOpened": "2025-02-10T13:08:58.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DoctorProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Profiles\\DoctorProfile.cs",
-              "RelativeDocumentMoniker": "Docsm\\Profiles\\DoctorProfile.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Profiles\\DoctorProfile.cs",
-              "RelativeToolTip": "Docsm\\Profiles\\DoctorProfile.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCoAAABEAAAAAAAAAA==",
+              "Title": "DoctorScheduleController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Controllers\\DoctorScheduleController.cs",
+              "RelativeDocumentMoniker": "Docsm\\Controllers\\DoctorScheduleController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Controllers\\DoctorScheduleController.cs",
+              "RelativeToolTip": "Docsm\\Controllers\\DoctorScheduleController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAIA3wBYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T17:53:47.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T18:14:05.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SpecialtyController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Controllers\\SpecialtyController.cs",
-              "RelativeDocumentMoniker": "Docsm\\Controllers\\SpecialtyController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Controllers\\SpecialtyController.cs",
-              "RelativeToolTip": "Docsm\\Controllers\\SpecialtyController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T15:29:06.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Profiles\\UserProfile.cs",
-              "RelativeDocumentMoniker": "Docsm\\Profiles\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Profiles\\UserProfile.cs",
-              "RelativeToolTip": "Docsm\\Profiles\\UserProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T20:32:56.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DoctorUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorDtos\\DoctorUpdateDto.cs",
-              "RelativeDocumentMoniker": "Docsm\\DTOs\\DoctorDtos\\DoctorUpdateDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\DoctorDtos\\DoctorUpdateDto.cs",
-              "RelativeToolTip": "Docsm\\DTOs\\DoctorDtos\\DoctorUpdateDto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAsAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T17:40:44.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\Doctor.cs",
-              "RelativeDocumentMoniker": "Docsm\\Models\\Doctor.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\Doctor.cs",
-              "RelativeToolTip": "Docsm\\Models\\Doctor.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAEwAoAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T13:16:36.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 5,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "Docsm\\ServiceRegistration.cs",
               "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\ServiceRegistration.cs",
               "RelativeToolTip": "Docsm\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABwAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T12:29:39.634Z"
+              "WhenOpened": "2025-02-10T18:11:27.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "jwtTokens.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Helpers\\jwtTokens.cs",
-              "RelativeDocumentMoniker": "Docsm\\Helpers\\jwtTokens.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Helpers\\jwtTokens.cs",
-              "RelativeToolTip": "Docsm\\Helpers\\jwtTokens.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAApwBgAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ITimeScheduleService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Interfaces\\ITimeScheduleService.cs",
+              "RelativeDocumentMoniker": "Docsm\\Services\\Interfaces\\ITimeScheduleService.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Interfaces\\ITimeScheduleService.cs",
+              "RelativeToolTip": "Docsm\\Services\\Interfaces\\ITimeScheduleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T11:18:49.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IDoctorService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Interfaces\\IDoctorService.cs",
-              "RelativeDocumentMoniker": "Docsm\\Services\\Interfaces\\IDoctorService.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Interfaces\\IDoctorService.cs",
-              "RelativeToolTip": "Docsm\\Services\\Interfaces\\IDoctorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T19:15:04.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "Docsm\\Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "Docsm\\Controllers\\DoctorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T17:56:50.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "SpecialtyUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\SpecialtyDtos\\SpecialtyUpdateDto.cs",
-              "RelativeDocumentMoniker": "Docsm\\DTOs\\SpecialtyDtos\\SpecialtyUpdateDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\SpecialtyDtos\\SpecialtyUpdateDto.cs",
-              "RelativeToolTip": "Docsm\\DTOs\\SpecialtyDtos\\SpecialtyUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T15:25:37.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ImageException.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\ImageException.cs",
-              "RelativeDocumentMoniker": "Docsm\\Exceptions\\ImageException.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\ImageException.cs",
-              "RelativeToolTip": "Docsm\\Exceptions\\ImageException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T18:43:57.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IBaseException.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\IBaseException.cs",
-              "RelativeDocumentMoniker": "Docsm\\Exceptions\\IBaseException.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\IBaseException.cs",
-              "RelativeToolTip": "Docsm\\Exceptions\\IBaseException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:03:48.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\AuthDtos\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "Docsm\\DTOs\\AuthDtos\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\AuthDtos\\RegisterDto.cs",
-              "RelativeToolTip": "Docsm\\DTOs\\AuthDtos\\RegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T14:50:58.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ISpecialtyService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Interfaces\\ISpecialtyService.cs",
-              "RelativeDocumentMoniker": "Docsm\\Services\\Interfaces\\ISpecialtyService.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Interfaces\\ISpecialtyService.cs",
-              "RelativeToolTip": "Docsm\\Services\\Interfaces\\ISpecialtyService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T18:21:48.072Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "BadRequestException.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\BadRequestException.cs",
-              "RelativeDocumentMoniker": "Docsm\\Exceptions\\BadRequestException.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\BadRequestException.cs",
-              "RelativeToolTip": "Docsm\\Exceptions\\BadRequestException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:06:09.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Docsm\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Docsm\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwCkAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:11:29.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "DoctorStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Helpers\\Enums\\Status\\DoctorStatus.cs",
-              "RelativeDocumentMoniker": "Docsm\\Helpers\\Enums\\Status\\DoctorStatus.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Helpers\\Enums\\Status\\DoctorStatus.cs",
-              "RelativeToolTip": "Docsm\\Helpers\\Enums\\Status\\DoctorStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T14:36:35.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\Patient.cs",
-              "RelativeDocumentMoniker": "Docsm\\Models\\Patient.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\Patient.cs",
-              "RelativeToolTip": "Docsm\\Models\\Patient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:14:41.98Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "PatientConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Configurations\\PatientConfiguration.cs",
-              "RelativeDocumentMoniker": "Docsm\\Configurations\\PatientConfiguration.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Configurations\\PatientConfiguration.cs",
-              "RelativeToolTip": "Docsm\\Configurations\\PatientConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:15:31.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "AppointmentStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Helpers\\Enums\\Status\\AppointmentStatus.cs",
-              "RelativeDocumentMoniker": "Docsm\\Helpers\\Enums\\Status\\AppointmentStatus.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Helpers\\Enums\\Status\\AppointmentStatus.cs",
-              "RelativeToolTip": "Docsm\\Helpers\\Enums\\Status\\AppointmentStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T14:36:51.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Docsm\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\User.cs",
-              "RelativeToolTip": "Docsm\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T13:16:47.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DoctorConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Configurations\\DoctorConfiguration.cs",
-              "RelativeDocumentMoniker": "Docsm\\Configurations\\DoctorConfiguration.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Configurations\\DoctorConfiguration.cs",
-              "RelativeToolTip": "Docsm\\Configurations\\DoctorConfiguration.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T11:02:14.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ApoSystemDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DataAccess\\ApoSystemDbContext.cs",
-              "RelativeDocumentMoniker": "Docsm\\DataAccess\\ApoSystemDbContext.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DataAccess\\ApoSystemDbContext.cs",
-              "RelativeToolTip": "Docsm\\DataAccess\\ApoSystemDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T20:28:12.81Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\Common\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Docsm\\Models\\Common\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\Common\\BaseEntity.cs",
-              "RelativeToolTip": "Docsm\\Models\\Common\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:50:37.412Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Configurations\\UserConfiguration.cs",
-              "RelativeDocumentMoniker": "Docsm\\Configurations\\UserConfiguration.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Configurations\\UserConfiguration.cs",
-              "RelativeToolTip": "Docsm\\Configurations\\UserConfiguration.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T11:03:16.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "FileExstension.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Extensions\\FileExstension.cs",
-              "RelativeDocumentMoniker": "Docsm\\Extensions\\FileExstension.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Extensions\\FileExstension.cs",
-              "RelativeToolTip": "Docsm\\Extensions\\FileExstension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T15:29:36.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Implements\\EmailService.cs",
-              "RelativeDocumentMoniker": "Docsm\\Services\\Implements\\EmailService.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Implements\\EmailService.cs",
-              "RelativeToolTip": "Docsm\\Services\\Implements\\EmailService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACgAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T19:31:40.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\appsettings.json",
-              "RelativeDocumentMoniker": "Docsm\\appsettings.json",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\appsettings.json",
-              "RelativeToolTip": "Docsm\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-04T18:01:22.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "JwtOptions.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Options\\JwtOptions.cs",
-              "RelativeDocumentMoniker": "Docsm\\Options\\JwtOptions.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Options\\JwtOptions.cs",
-              "RelativeToolTip": "Docsm\\Options\\JwtOptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T11:58:49.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Specialty.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\Specialty.cs",
-              "RelativeDocumentMoniker": "Docsm\\Models\\Specialty.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Models\\Specialty.cs",
-              "RelativeToolTip": "Docsm\\Models\\Specialty.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T14:11:04.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "SpecialtyConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Configurations\\SpecialtyConfiguration.cs",
-              "RelativeDocumentMoniker": "Docsm\\Configurations\\SpecialtyConfiguration.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Configurations\\SpecialtyConfiguration.cs",
-              "RelativeToolTip": "Docsm\\Configurations\\SpecialtyConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T11:03:34.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "SmtpOptions.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Options\\SmtpOptions.cs",
-              "RelativeDocumentMoniker": "Docsm\\Options\\SmtpOptions.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Options\\SmtpOptions.cs",
-              "RelativeToolTip": "Docsm\\Options\\SmtpOptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T19:30:35.531Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Interfaces\\IEmailService.cs",
-              "RelativeDocumentMoniker": "Docsm\\Services\\Interfaces\\IEmailService.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Services\\Interfaces\\IEmailService.cs",
-              "RelativeToolTip": "Docsm\\Services\\Interfaces\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T19:31:26.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Helpers\\Enums\\Roles.cs",
-              "RelativeDocumentMoniker": "Docsm\\Helpers\\Enums\\Roles.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Helpers\\Enums\\Roles.cs",
-              "RelativeToolTip": "Docsm\\Helpers\\Enums\\Roles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:08:19.891Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ForgotPasswordDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\AuthDtos\\ForgotPasswordDto.cs",
-              "RelativeDocumentMoniker": "Docsm\\DTOs\\AuthDtos\\ForgotPasswordDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\AuthDtos\\ForgotPasswordDto.cs",
-              "RelativeToolTip": "Docsm\\DTOs\\AuthDtos\\ForgotPasswordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T22:46:46.226Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "ResetPasswordDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\AuthDtos\\ResetPasswordDto.cs",
-              "RelativeDocumentMoniker": "Docsm\\DTOs\\AuthDtos\\ResetPasswordDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\AuthDtos\\ResetPasswordDto.cs",
-              "RelativeToolTip": "Docsm\\DTOs\\AuthDtos\\ResetPasswordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T22:30:08.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Docsm\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\appsettings.Development.json",
-              "RelativeToolTip": "Docsm\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-06T11:50:04.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\AuthDtos\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Docsm\\DTOs\\AuthDtos\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\DTOs\\AuthDtos\\LoginDto.cs",
-              "RelativeToolTip": "Docsm\\DTOs\\AuthDtos\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T14:50:36.003Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "SeedExstension.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Extensions\\SeedExstension.cs",
-              "RelativeDocumentMoniker": "Docsm\\Extensions\\SeedExstension.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Extensions\\SeedExstension.cs",
-              "RelativeToolTip": "Docsm\\Extensions\\SeedExstension.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T13:56:48.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Docsm.csproj",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Docsm.csproj",
-              "RelativeDocumentMoniker": "Docsm\\Docsm.csproj",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Docsm.csproj",
-              "RelativeToolTip": "Docsm\\Docsm.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-03T10:58:07.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "Genders.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Helpers\\Enums\\Genders.cs",
-              "RelativeDocumentMoniker": "Docsm\\Helpers\\Enums\\Genders.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Helpers\\Enums\\Genders.cs",
-              "RelativeToolTip": "Docsm\\Helpers\\Enums\\Genders.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T14:21:09.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "NotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\NotFoundException.cs",
-              "RelativeDocumentMoniker": "Docsm\\Exceptions\\NotFoundException.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Exceptions\\NotFoundException.cs",
-              "RelativeToolTip": "Docsm\\Exceptions\\NotFoundException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:05:47.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "20250205120328_CreatedDoctorSpecialtyAndUser.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Migrations\\20250205120328_CreatedDoctorSpecialtyAndUser.cs",
-              "RelativeDocumentMoniker": "Docsm\\Migrations\\20250205120328_CreatedDoctorSpecialtyAndUser.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Migrations\\20250205120328_CreatedDoctorSpecialtyAndUser.cs",
-              "RelativeToolTip": "Docsm\\Migrations\\20250205120328_CreatedDoctorSpecialtyAndUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T12:03:28.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "Docsm.http",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Docsm.http",
-              "RelativeDocumentMoniker": "Docsm\\Docsm.http",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\Docsm.http",
-              "RelativeToolTip": "Docsm\\Docsm.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-02-03T08:41:03.597Z"
+              "WhenOpened": "2025-02-10T13:08:37.207Z"
             }
           ]
         }

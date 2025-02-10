@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HrNn8f1NHa7ClpJ0MHZnn0JcI1e58OfLAH1yh3ntops=",
+  "Hash": "YGvLrIul85gWOSDp+18IVIukQq2wTPjF5TAdpMIldeI=",
   "Source": "Docsm",
   "BasePath": "_content/Docsm",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\2q4lzgow.nh3.jpg",
+      "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\3bqznxtz.e1q.jpg",
       "SourceId": "Docsm",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\",
       "BasePath": "_content/Docsm",
-      "RelativePath": "images/doctors/2q4lzgow.nh3#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/doctors/3bqznxtz.e1q#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35,112 +35,7 @@
       "Integrity": "aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctors\\2q4lzgow.nh3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\gl0kpejl.pb4.jpg",
-      "SourceId": "Docsm",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\",
-      "BasePath": "_content/Docsm",
-      "RelativePath": "images/doctors/gl0kpejl.pb4#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "os60i8a5mj",
-      "Integrity": "aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctors\\gl0kpejl.pb4.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\llu525lv.yoo.jpg",
-      "SourceId": "Docsm",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\",
-      "BasePath": "_content/Docsm",
-      "RelativePath": "images/doctors/llu525lv.yoo#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "os60i8a5mj",
-      "Integrity": "aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctors\\llu525lv.yoo.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\my5a3a5c.vkj.jpg",
-      "SourceId": "Docsm",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\",
-      "BasePath": "_content/Docsm",
-      "RelativePath": "images/doctors/my5a3a5c.vkj#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "os60i8a5mj",
-      "Integrity": "aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctors\\my5a3a5c.vkj.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\oucvyulg.ys1.jpg",
-      "SourceId": "Docsm",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\",
-      "BasePath": "_content/Docsm",
-      "RelativePath": "images/doctors/oucvyulg.ys1#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "os60i8a5mj",
-      "Integrity": "aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctors\\oucvyulg.ys1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\oww5ejj2.5cf.jpg",
-      "SourceId": "Docsm",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\",
-      "BasePath": "_content/Docsm",
-      "RelativePath": "images/doctors/oww5ejj2.5cf#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "os60i8a5mj",
-      "Integrity": "aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctors\\oww5ejj2.5cf.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\doctors\\3bqznxtz.e1q.jpg"
     },
     {
       "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\avmyc1ys.slr.png",
@@ -229,8 +124,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "images/doctors/2q4lzgow.nh3.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\2q4lzgow.nh3.jpg",
+      "Route": "images/doctors/3bqznxtz.e1q.jpg",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\3bqznxtz.e1q.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -251,7 +146,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 11:11:24 GMT"
+          "Value": "Sun, 09 Feb 2025 11:57:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -266,8 +161,8 @@
       ]
     },
     {
-      "Route": "images/doctors/2q4lzgow.nh3.os60i8a5mj.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\2q4lzgow.nh3.jpg",
+      "Route": "images/doctors/3bqznxtz.e1q.os60i8a5mj.jpg",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\3bqznxtz.e1q.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -288,7 +183,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 11:11:24 GMT"
+          "Value": "Sun, 09 Feb 2025 11:57:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -302,417 +197,7 @@
         },
         {
           "Name": "label",
-          "Value": "images/doctors/2q4lzgow.nh3.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
-        }
-      ]
-    },
-    {
-      "Route": "images/doctors/gl0kpejl.pb4.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\gl0kpejl.pb4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 10:15:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
-        }
-      ]
-    },
-    {
-      "Route": "images/doctors/gl0kpejl.pb4.os60i8a5mj.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\gl0kpejl.pb4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 10:15:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "os60i8a5mj"
-        },
-        {
-          "Name": "label",
-          "Value": "images/doctors/gl0kpejl.pb4.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
-        }
-      ]
-    },
-    {
-      "Route": "images/doctors/llu525lv.yoo.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\llu525lv.yoo.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 11:05:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
-        }
-      ]
-    },
-    {
-      "Route": "images/doctors/llu525lv.yoo.os60i8a5mj.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\llu525lv.yoo.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 11:05:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "os60i8a5mj"
-        },
-        {
-          "Name": "label",
-          "Value": "images/doctors/llu525lv.yoo.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
-        }
-      ]
-    },
-    {
-      "Route": "images/doctors/my5a3a5c.vkj.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\my5a3a5c.vkj.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 10:22:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
-        }
-      ]
-    },
-    {
-      "Route": "images/doctors/my5a3a5c.vkj.os60i8a5mj.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\my5a3a5c.vkj.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 10:22:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "os60i8a5mj"
-        },
-        {
-          "Name": "label",
-          "Value": "images/doctors/my5a3a5c.vkj.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
-        }
-      ]
-    },
-    {
-      "Route": "images/doctors/oucvyulg.ys1.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\oucvyulg.ys1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 10:07:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
-        }
-      ]
-    },
-    {
-      "Route": "images/doctors/oucvyulg.ys1.os60i8a5mj.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\oucvyulg.ys1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 10:07:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "os60i8a5mj"
-        },
-        {
-          "Name": "label",
-          "Value": "images/doctors/oucvyulg.ys1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
-        }
-      ]
-    },
-    {
-      "Route": "images/doctors/oww5ejj2.5cf.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\oww5ejj2.5cf.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 11:30:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
-        }
-      ]
-    },
-    {
-      "Route": "images/doctors/oww5ejj2.5cf.os60i8a5mj.jpg",
-      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\oww5ejj2.5cf.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31579"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 09 Feb 2025 11:30:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "os60i8a5mj"
-        },
-        {
-          "Name": "label",
-          "Value": "images/doctors/oww5ejj2.5cf.jpg"
+          "Value": "images/doctors/3bqznxtz.e1q.jpg"
         },
         {
           "Name": "integrity",
