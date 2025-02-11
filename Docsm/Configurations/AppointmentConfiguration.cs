@@ -24,7 +24,10 @@ namespace Docsm.Configurations
                 a => a.ToString(),
                 a => (AppointmentStatus)Enum.Parse(typeof(AppointmentStatus), a)
                 );
-          
+          builder.HasOne(a => a.DoctorTimeSchedule)
+                 .WithMany(ds => ds.Appointments)
+                 .HasForeignKey(a => a.DoctorScheduleId)
+                 .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

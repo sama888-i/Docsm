@@ -19,6 +19,7 @@ namespace Docsm.Models
         public DoctorStatus DoctorStatus { get; set; }     
         public ICollection<Appointment>? Appointments { get; set; }
         public ICollection<DoctorTimeSchedule>? TimeSchedules{ get; set; }
+        public ICollection<Review>? Reviews { get; set; }
 
 
     }

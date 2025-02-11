@@ -7,5 +7,6 @@ namespace Docsm.Models
         public string UserId { get; set; }
         public User User { get; set; }
         public ICollection<Appointment>? Appointments { get; set; }
+        public ICollection<Review>? Reviews { get; set; }
     }
 }
