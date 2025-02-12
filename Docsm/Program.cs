@@ -77,7 +77,7 @@ namespace Docsm
                     opt.EnablePersistAuthorization();
                 });
             }
-            SeedExstension.UseUserSeed(app).Wait();
+            SeedExtension.UseUserSeed(app).Wait();
             app.UseHttpsRedirection();
 
             app.UseAuthentication();

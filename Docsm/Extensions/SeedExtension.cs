@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Docsm.Extensions
 {
-    public static  class SeedExstension
+    public static  class SeedExtension
     {
         public static async Task UseUserSeed(this IApplicationBuilder app)
         {

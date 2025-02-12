@@ -14,7 +14,7 @@ namespace Docsm.Services.Implements
     public class DoctorService(ApoSystemDbContext _context,IWebHostEnvironment _enw,
         IMapper _mapper,UserManager<User> _userManager ,IHttpContextAccessor _acc):IDoctorService
     {
-        public async Task CreateAsync(DoctorCreateDto dto)
+        public async Task CreateOrUpdateAsync(DoctorCreateDto dto)
         {
             if (!await _context.Specialties.AnyAsync(x => x.Id == dto.SpecialtyId))
                 throw new NotFoundException<Specialty>();
@@ -25,25 +25,49 @@ namespace Docsm.Services.Implements
             var existingUser = await _userManager.FindByIdAsync(userId);
             if (existingUser == null)
                 throw new NotFoundException("User not found with the given ID.");
-            
-            _mapper.Map(dto, existingUser);
 
-            if (dto.Image != null)
+            var existingDoctor = await _context.Doctors .FirstOrDefaultAsync(d => d.UserId == userId);
+
+            if (existingDoctor != null)
             {
-                if (!dto.Image.IsValidType("image"))
-                    throw new InvalidImageTypeException("Image type must be an image");
+           
+                _mapper.Map(dto, existingDoctor);
 
-                if (!dto.Image.IsValidSize(888))
-                    throw new InvalidImageSizeException("Image length must be less than 888kb");
+                if (dto.Image != null)
+                {
+                    if (!dto.Image.IsValidType("image"))
+                        throw new InvalidImageTypeException("Image type must be an image");
 
-                existingUser.ProfileImageUrl = await dto.Image.UploadAsync(_enw.WebRootPath,"images","doctors");
+                    if (!dto.Image.IsValidSize(888))
+                        throw new InvalidImageSizeException("Image length must be less than 888kb");
+
+                    existingDoctor.User.ProfileImageUrl = await dto.Image.UploadAsync(_enw.WebRootPath, "images", "doctors");
+                }
+
+              
+                await _context.SaveChangesAsync();
             }
+            else
+            {
+   
+                _mapper.Map(dto, existingUser);
 
-         
-            var doctor = _mapper.Map<Doctor>(dto);
-            doctor.UserId = existingUser.Id;
-            await _context.Doctors.AddAsync(doctor);   
-            await _context.SaveChangesAsync();
+                if (dto.Image != null)
+                {
+                    if (!dto.Image.IsValidType("image"))
+                        throw new InvalidImageTypeException("Image type must be an image");
+
+                    if (!dto.Image.IsValidSize(888))
+                        throw new InvalidImageSizeException("Image length must be less than 888kb");
+
+                    existingUser.ProfileImageUrl = await dto.Image.UploadAsync(_enw.WebRootPath, "images", "doctors");
+                }
+
+                var doctor = _mapper.Map<Doctor>(dto);
+                doctor.UserId = existingUser.Id;
+                await _context.Doctors.AddAsync(doctor);
+                await _context.SaveChangesAsync();
+            }
         }
 
         public async Task DeleteAsync(int? id)
@@ -74,36 +98,7 @@ namespace Docsm.Services.Implements
             return _mapper.Map<DoctorGetDto>(doctor);
         }
 
-        public async Task UpdateAsync(int? id, DoctorUpdateDto dto)
-        {
-            if (id == null)
-                throw new BadRequestException("Doctor id cannot be null.");
-
-            if (!await _context.Specialties.AnyAsync(x => x.Id == dto.SpecialtyId))
-                throw new NotFoundException<Specialty>();
-
-            var doctor = await _context.Doctors
-                .Include(d => d.User)  
-                .FirstOrDefaultAsync(d => d.Id == id);
-
-            if (doctor == null)
-                throw new NotFoundException<Doctor>();
-
-            _mapper.Map(dto, doctor);
-            
-            if (dto.Image != null)
-            {
-                if (!dto.Image.IsValidType("image"))
-                    throw new InvalidImageTypeException("Image type must be an image");
-
-                if (!dto.Image.IsValidSize(888))
-                    throw new InvalidImageSizeException("Image length must be less than 888kb");
-
-                doctor.User.ProfileImageUrl = await dto.Image.UploadAsync(_enw.WebRootPath, "images", "doctors");
-            }
-
-            await _context.SaveChangesAsync();
-        }
+       
 
        
     }

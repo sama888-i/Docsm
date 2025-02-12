@@ -1,6 +1,6 @@
 ﻿namespace Docsm.Extensions
 {
-    public static class FileExstension
+    public static class FileExtension
     {
         public static bool IsValidType(this IFormFile file, string type)
             => file.ContentType.StartsWith("image");

@@ -1,7 +1,5 @@
-﻿using Docsm.DataAccess;
-using Docsm.DTOs.DoctorDtos;
-using Docsm.DTOs.SpecialtyDtos;
-using Docsm.Services.Implements;
+﻿using Docsm.DTOs.DoctorDtos;
+using Docsm.DTOs.PatientDtos;
 using Docsm.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,7 +8,7 @@ namespace Docsm.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DoctorController(IDoctorService _service) : ControllerBase
+    public class PatientController(IPatientService _service) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> GetAllDoctors()
@@ -21,16 +19,16 @@ namespace Docsm.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var doctor = await _service.GetByIdAsync(id);
-            return Ok(doctor);
+            var patient = await _service.GetByIdAsync(id);
+            return Ok(patient);
         }
         [HttpPost]
         [Consumes("multipart/form-data")]
-        public async Task<IActionResult> Create(DoctorCreateDto dto)
+        public async Task<IActionResult> Create(ProfileCreateOrUpdateDto dto)
         {
 
             if (!ModelState.IsValid) return BadRequest("Girilen melumatlarda yanlisliq var");
-            await _service.CreateOrUpdateAsync(dto);
+            await _service.ProfileCreateOrUpdateAsync(dto);
             return Ok();
 
         }
@@ -40,6 +38,5 @@ namespace Docsm.Controllers
             await _service.DeleteAsync(id);
             return Ok();
         }
-      
     }
 }

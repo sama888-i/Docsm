@@ -1,4 +1,8 @@
 wwwroot\images\doctors\3bqznxtz.e1q.jpg
+wwwroot\images\doctors\jan3pjww.fvl.jpg
+wwwroot\images\doctors\qpas012o.5to.jpg
+wwwroot\images\doctors\ski0i53u.li2.jpg
+wwwroot\images\patients\q3ifwbgs.lff.jpg
 wwwroot\images\specialties\avmyc1ys.slr.png
 wwwroot\images\specialties\kpctaktf.ggh.png
 wwwroot\images\specialties\wcjsce1g.jow.png
