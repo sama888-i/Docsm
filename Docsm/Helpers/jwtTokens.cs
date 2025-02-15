@@ -50,7 +50,7 @@ namespace Docsm.Helpers
                 audience: _jwtOptions.Audience ,
                 claims: claims,
                 notBefore: DateTime.UtcNow,
-                expires: DateTime.UtcNow.AddSeconds(36),
+                expires: DateTime.UtcNow.AddDays(1),
                 signingCredentials: cred
                 );
             JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();

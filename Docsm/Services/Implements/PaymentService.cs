@@ -14,17 +14,14 @@ namespace Docsm.Services.Implements
             _opt = options.Value;
             StripeConfiguration.ApiKey = _opt.SecretKey;
         }
-        public async Task<string> CreatePaymentMethod(CardDetailsDto dto)
+        public async Task<string> CreatePaymentMethodWithToken(string token)
         {
             var options = new PaymentMethodCreateOptions
             {
                 Type = "card",
                 Card = new PaymentMethodCardOptions
                 {
-                    Number = dto.CardNumber,
-                    ExpMonth = dto.ExpiryMonth,
-                    ExpYear = dto.ExpiryYear,
-                    Cvc = dto.Cvv
+                    Token = token 
                 }
             };
 
@@ -50,7 +47,8 @@ namespace Docsm.Services.Implements
         }
         public async Task<string> ProcessPayment(CardDetailsDto dto, decimal amount, string currency)
         {
-            var paymentMethodId = await CreatePaymentMethod(dto);
+
+            var paymentMethodId = await CreatePaymentMethodWithToken(dto.Token);
             var paymentIntentId = await CreatePaymentIntent(amount, currency, paymentMethodId);
             return paymentIntentId;
         }

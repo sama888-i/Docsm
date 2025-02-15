@@ -1,5 +1,53 @@
 [
   {
+    "ContainingType": "Docsm.Controllers.AppointmentController",
+    "Method": "CreateAppointment",
+    "RelativePath": "api/Appointment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Docsm.DTOs.AppointmentDtos.AppointmentCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AppointmentController",
+    "Method": "CancelAppointment",
+    "RelativePath": "api/Appointment/Cancel",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AppointmentController",
+    "Method": "ConfirmAppointment",
+    "RelativePath": "api/Appointment/Confirm",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Docsm.Controllers.AuthController",
     "Method": "EmailConfirm",
     "RelativePath": "api/Auth/EmailConfirm",

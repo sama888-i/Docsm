@@ -5,6 +5,81 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Appointment": {
+      "post": {
+        "tags": [
+          "Appointment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AppointmentCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AppointmentCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AppointmentCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Appointment/Confirm": {
+      "put": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "appointmentId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Appointment/Cancel": {
+      "delete": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "appointmentId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Auth/register": {
       "post": {
         "tags": [
@@ -699,6 +774,23 @@
   },
   "components": {
     "schemas": {
+      "AppointmentCreateDto": {
+        "type": "object",
+        "properties": {
+          "doctorScheduleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "reasonAppointment": {
+            "type": "string",
+            "nullable": true
+          },
+          "cardDetails": {
+            "$ref": "#/components/schemas/CardDetailsDto"
+          }
+        },
+        "additionalProperties": false
+      },
       "BloodGroups": {
         "enum": [
           0,
@@ -712,6 +804,16 @@
         ],
         "type": "integer",
         "format": "int32"
+      },
+      "CardDetailsDto": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "CreateScheduleDto": {
         "type": "object",

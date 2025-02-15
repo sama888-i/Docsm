@@ -65,6 +65,7 @@ namespace Docsm
                         ValidAudience = jwtOpt.Audience,
                         ValidIssuer = jwtOpt.Issuer,
                         ClockSkew = TimeSpan.Zero
+                        
 
                     };
 

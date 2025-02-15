@@ -4,15 +4,20 @@ using Docsm.Exceptions;
 using Docsm.Helpers.Enums.Status;
 using Docsm.Models;
 using Docsm.Services.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Docsm.Services.Implements
 {
-    public class AppointmentService(ApoSystemDbContext _context, IPaymentService _service) : IAppointmentService
+    public class AppointmentService(ApoSystemDbContext _context, IPaymentService _service,
+        UserManager<User> _userManager , IHttpContextAccessor _acc) : IAppointmentService
     {
-        public async Task<string> CreateAppointmentAsync(int patientId, AppointmentCreateDto dto)
+        public async Task<string> CreateAppointmentAsync( AppointmentCreateDto dto)
         {
-            var patient = await _context.Patients.FirstOrDefaultAsync(p => p.Id == patientId);
+            var userId = _userManager.GetUserId(_acc.HttpContext.User);
+            if (userId == null)
+                throw new UnauthorizedAccessException<User>();
+            var patient = await _context.Patients.FirstOrDefaultAsync(p => p.UserId == userId );
             if (patient == null)
                 throw new Exception("Profil tamamlanmayib");
 
@@ -35,7 +40,7 @@ namespace Docsm.Services.Implements
             var appointment = new Appointment
             {
                 DoctorId = schedule.DoctorId,
-                PatientId = patientId,
+                PatientId = patient.Id,
                 DoctorScheduleId = dto.DoctorScheduleId,
                 Status = AppointmentStatus.Pending,
                 ReasonAppointment = dto.ReasonAppointment,
