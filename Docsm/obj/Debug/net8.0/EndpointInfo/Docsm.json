@@ -217,6 +217,14 @@
             }
           },
           {
+            "name": "PerAppointPrice",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
             "name": "SpecialtyId",
             "in": "query",
             "schema": {

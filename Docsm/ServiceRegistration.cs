@@ -3,6 +3,7 @@ using Docsm.Services.Implements;
 using Docsm.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Stripe;
 using System.Text;
 
 namespace Docsm
@@ -19,6 +20,16 @@ namespace Docsm
             services.Configure<SmtpOptions>(Configuration.GetSection(SmtpOptions.Name));
             return services;
         }
+        public static IServiceCollection AddStripeOptions(this IServiceCollection services, IConfiguration Configuration)
+        {
+            var stripeSettings = Configuration.GetSection("Stripe");
+            services.Configure<StripeOptions>(stripeSettings);
+
+            StripeConfiguration.ApiKey = stripeSettings["SecretKey"];
+
+            return services;
+        }
+
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
            
@@ -28,6 +39,7 @@ namespace Docsm
             services.AddScoped<ITimeScheduleService ,TimeScheduleService>();
             services.AddScoped<IPatientService ,PatientService>();
             services.AddScoped<IAppointmentService ,AppointmentService>();
+            services.AddScoped<IPaymentService, PaymentService>();
             return services;
         }
 

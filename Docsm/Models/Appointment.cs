@@ -11,7 +11,8 @@ namespace Docsm.Models
         public Patient Patient { get; set; }
         public int DoctorScheduleId {  get; set; }
         public DoctorTimeSchedule DoctorTimeSchedule { get; set; }
-        public AppointmentStatus Status { get; set; }
+        public AppointmentStatus Status { get; set; }  
         public string? ReasonAppointment {  get; set; }
+        public string PaymentIntentId { get; set; }
     }
 }

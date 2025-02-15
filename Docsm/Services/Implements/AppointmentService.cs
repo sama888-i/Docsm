@@ -1,10 +1,89 @@
 ﻿using Docsm.DataAccess;
+using Docsm.DTOs.AppointmentDtos;
+using Docsm.Exceptions;
+using Docsm.Helpers.Enums.Status;
+using Docsm.Models;
 using Docsm.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Docsm.Services.Implements
 {
-    public class AppointmentService(ApoSystemDbContext _context):IAppointmentService
+    public class AppointmentService(ApoSystemDbContext _context, IPaymentService _service) : IAppointmentService
     {
+        public async Task<string> CreateAppointmentAsync(int patientId, AppointmentCreateDto dto)
+        {
+            var patient = await _context.Patients.FirstOrDefaultAsync(p => p.Id == patientId);
+            if (patient == null)
+                throw new Exception("Profil tamamlanmayib");
 
+            var schedule = await _context.DoctorTimeSchedules
+                .Include(d => d.Doctor)
+                .FirstOrDefaultAsync(s => s.Id == dto.DoctorScheduleId);
+
+            if (schedule == null || !schedule.IsAvailable)
+                throw new Exception("Seçilmiş vaxt mövcud deyil.");
+
+            decimal price = schedule.Doctor.PerAppointPrice;
+
+            string paymentIntentId = await _service.ProcessPayment(dto.CardDetails,price, "azn");
+            if (string.IsNullOrEmpty(paymentIntentId))
+            {
+                throw new BadRequestException( "Ödəniş alınmadı, zəhmət olmasa yenidən yoxlayın.");
+            }
+
+
+            var appointment = new Appointment
+            {
+                DoctorId = schedule.DoctorId,
+                PatientId = patientId,
+                DoctorScheduleId = dto.DoctorScheduleId,
+                Status = AppointmentStatus.Pending,
+                ReasonAppointment = dto.ReasonAppointment,
+                PaymentIntentId = paymentIntentId
+            };
+
+            using var transaction = await _context.Database.BeginTransactionAsync();
+            try
+            {
+                _context.Appointments.Add(appointment);
+                schedule.IsAvailable = false;
+                await _context.SaveChangesAsync(); 
+
+                await transaction.CommitAsync(); 
+                return ("Görüş yaradıldı , Həkimin təsdiqi gözlənilir.");
+            }
+            catch (Exception)
+            {
+                await transaction.RollbackAsync();
+                throw new BadRequestException("Görüş yaradıla bilmədi, zəhmət olmasa yenidən yoxlayın.");
+            }
+        }
+        public async Task<string> ConfirmAppointmentAsync(int appointmentId)
+        {
+            var appointment = await _context.Appointments.FindAsync(appointmentId);
+            if (appointment == null || appointment.Status != AppointmentStatus.Pending)
+                 throw new Exception("Görüş tapılmadı və ya təsdiqlənə bilməz.");
+
+            await _service.CapturePayment(appointment.PaymentIntentId);
+
+            appointment.Status = AppointmentStatus.Confirmed;
+            await _context.SaveChangesAsync();
+
+            return ("Görüş təsdiqləndi və ödəniş tamamlandı.");
+        }
+
+        public async Task<string> CancelAppointmentAsync(int appointmentId)
+        {
+            var appointment = await _context.Appointments.FindAsync(appointmentId);
+            if (appointment == null || appointment.Status != AppointmentStatus.Pending)
+                throw new Exception("Görüş tapılmadı və ya ləğv edilə bilməz.");
+
+            await _service.RefundPayment(appointment.PaymentIntentId);
+
+            appointment.Status = AppointmentStatus.Cancelled;
+            await _context.SaveChangesAsync();
+
+            return ("Görüş ləğv edildi və pul geri qaytarıldı.");
+        }
     }
 }

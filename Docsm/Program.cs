@@ -63,6 +63,7 @@ namespace Docsm
             builder.Services.AddAuth(builder.Configuration);
             builder.Services.AddJwtOptions(builder.Configuration);
             builder .Services.AddSmtpOptions(builder.Configuration);
+            builder.Services.AddStripeOptions(builder.Configuration);
             builder.Services.AddServices();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddScoped<jwtTokens>();

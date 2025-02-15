@@ -14,6 +14,7 @@ namespace Docsm.Models
         public string? Services {  get; set; } 
         public string? ClinicName{  get; set; } 
         public string? ClinicAddress{  get; set; } 
+        public decimal PerAppointPrice {  get; set; }
         public double Latitude {  get; set; }
         public double Longitude { get; set; }
         public DoctorStatus DoctorStatus { get; set; }     
