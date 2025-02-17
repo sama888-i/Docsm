@@ -118,6 +118,22 @@
   },
   {
     "ContainingType": "Docsm.Controllers.AuthController",
+    "Method": "DoctorRegister",
+    "RelativePath": "api/Auth/RegisterForDoctor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Docsm.DTOs.AuthDtos.DoctorRegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AuthController",
     "Method": "ResetPassword",
     "RelativePath": "api/Auth/ResetPassword",
     "HttpMethod": "POST",
@@ -410,6 +426,74 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.ReviewController",
+    "Method": "AddReview",
+    "RelativePath": "api/Review",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Docsm.DTOs.ReviewDtos.ReviewCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.ReviewController",
+    "Method": "GetDoctorReview",
+    "RelativePath": "api/Review",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.ReviewController",
+    "Method": "DeleteReview",
+    "RelativePath": "api/Review",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reviewId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.ReviewController",
+    "Method": "GetAllReview",
+    "RelativePath": "api/Review/For Admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.ReviewController",
+    "Method": "GetDoctorDashboardReviews",
+    "RelativePath": "api/Review/For DoctorDashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

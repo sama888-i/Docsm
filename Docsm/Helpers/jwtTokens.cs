@@ -26,6 +26,7 @@ namespace Docsm.Helpers
         {
             List<Claim> claims =
                 [
+                new Claim(ClaimTypes.NameIdentifier , user.Id ),
                 new Claim(ClaimTypes.Name ,user.UserName),
                 new Claim(ClaimTypes.Email,user.Email),
                 new Claim(ClaimTypes.Gender ,user.Gender.ToString()),
@@ -35,7 +36,8 @@ namespace Docsm.Helpers
 
             ];
 
-            var role = _userManager.GetRolesAsync(user).Result.FirstOrDefault();
+            var roles = await _userManager.GetRolesAsync(user);
+            var role = roles.FirstOrDefault();
             if (role != null)
             {
                 claims.Add(new Claim(ClaimTypes.Role, role));

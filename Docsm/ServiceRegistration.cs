@@ -39,7 +39,9 @@ namespace Docsm
             services.AddScoped<ITimeScheduleService ,TimeScheduleService>();
             services.AddScoped<IPatientService ,PatientService>();
             services.AddScoped<IAppointmentService ,AppointmentService>();
+            services.AddScoped<IReviewService, Docsm.Services.Implements.ReviewService>();
             services.AddScoped<IPaymentService, PaymentService>();
+           
             return services;
         }
 

@@ -4,6 +4,7 @@ using Docsm.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Docsm.Migrations
 {
     [DbContext(typeof(ApoSystemDbContext))]
-    partial class ApoSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250216215614_reviewilebagli")]
+    partial class reviewilebagli
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -239,7 +242,7 @@ namespace Docsm.Migrations
                     b.Property<int?>("ParentId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PatientId")
+                    b.Property<int>("PatientId")
                         .HasColumnType("int");
 
                     b.Property<int?>("Rating")
@@ -594,7 +597,8 @@ namespace Docsm.Migrations
                     b.HasOne("Docsm.Models.Patient", "Patient")
                         .WithMany("Reviews")
                         .HasForeignKey("PatientId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Doctor");
 

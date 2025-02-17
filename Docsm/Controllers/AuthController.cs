@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
+using Docsm.DataAccess;
 using Docsm.DTOs.AuthDtos;
 using Docsm.Exceptions;
 using Docsm.Helpers;
 using Docsm.Helpers.Enums;
+using Docsm.Helpers.Enums.Status;
 using Docsm.Models;
 using Docsm.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -17,6 +19,7 @@ namespace Docsm.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController(
+        ApoSystemDbContext _context,
         UserManager<User> _userManager,
         SignInManager<User> _signInManager,
         IMapper _mapper ,
@@ -44,6 +47,37 @@ namespace Docsm.Controllers
             await _service.SendConfirmEmailAsync(user.Email,  token);
             return Ok(new{ Message = "User registered successfully"});
         }
+        [HttpPost("RegisterForDoctor")]
+        public async Task<IActionResult> DoctorRegister(DoctorRegisterDto dto)
+        {
+            var user = await _userManager.Users.Where(x => x.UserName == dto.UserName || x.Email == dto.Email).FirstOrDefaultAsync();
+            if (user != null)
+            {
+                if (user.UserName == dto.UserName)
+                    throw new ExistException("Username already using by another user");
+                else
+                    throw new ExistException("This email is already registered");
+            }
+            user=_mapper.Map<User>(dto);
+            var result = await _userManager.CreateAsync(user, dto.Password);
+            if (!result.Succeeded) return BadRequest(result.Errors);
+          
+            await _userManager.AddToRoleAsync(user, nameof(Roles.Doctor ));
+            var doctor = new Doctor
+            {
+                UserId = user.Id,
+                DoctorStatus = DoctorStatus.Pending 
+            };
+
+            _context.Doctors.Add(doctor);
+            await _context.SaveChangesAsync();
+
+            string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            await _service.SendConfirmEmailAsync(user.Email, token);
+            return Ok(new { Message = "User registered successfully" });
+
+
+        }
 
 
         [HttpPost("login")]
@@ -62,6 +96,11 @@ namespace Docsm.Controllers
                 if (result.IsLockedOut)
                     ModelState.AddModelError("", "Wait until" + user.LockoutEnd!.Value.ToString("yyyy-MM-dd HH:mm:ss"));
                 return Unauthorized(new { message = "Username or Password is incorrect" });
+            }
+            var doctor = await _context.Doctors.FirstOrDefaultAsync(d => d.UserId == user.Id);
+            if (doctor != null && doctor.DoctorStatus == DoctorStatus.Pending)
+            {
+                return Unauthorized("Your account is pending approval by the admin.");
             }
             var token = await _jwtTokens.GenerateJwtToken(user);
             return Ok(token);
@@ -122,5 +161,6 @@ namespace Docsm.Controllers
 
             return BadRequest("Şifrə sıfırlama uğursuz oldu.");
         }
+        
     }
 }

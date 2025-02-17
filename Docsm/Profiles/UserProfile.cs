@@ -10,6 +10,8 @@ namespace Docsm.Profiles
         {
             CreateMap<RegisterDto, User>()
                 .ForMember(d => d.DateOfBirth, opt => opt.MapFrom(src => src.DateOfBirth.ToDateTime(new TimeOnly(0, 0))));
+            CreateMap<DoctorRegisterDto, User>()
+                     .ForMember(d => d.DateOfBirth, opt => opt.MapFrom(src => src.DateOfBirth.ToDateTime(new TimeOnly(0, 0))));
         }
     }
 }

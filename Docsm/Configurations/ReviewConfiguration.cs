@@ -18,9 +18,6 @@ namespace Docsm.Configurations
                .HasForeignKey(r => r.PatientId)
                .OnDelete(DeleteBehavior.Restrict);
 
-            builder.Property(r => r.Rating)
-              .IsRequired();
-
             builder.Property(r => r.Comment)
               .IsRequired()
               .HasMaxLength(1000);

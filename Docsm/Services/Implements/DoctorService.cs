@@ -7,6 +7,7 @@ using Docsm.Models;
 using Docsm.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using static Docsm.Exceptions.ImageException;
 
 namespace Docsm.Services.Implements
@@ -18,8 +19,9 @@ namespace Docsm.Services.Implements
         {
             if (!await _context.Specialties.AnyAsync(x => x.Id == dto.SpecialtyId))
                 throw new NotFoundException<Specialty>();
-            var userId = _userManager.GetUserId(_acc.HttpContext.User);
-            if (userId == null)
+
+            string? userId = _acc.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
                 throw new UnauthorizedAccessException<User>();
 
             var existingUser = await _userManager.FindByIdAsync(userId);

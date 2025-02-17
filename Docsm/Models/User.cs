@@ -7,7 +7,7 @@ namespace Docsm.Models
     {
         public string Name { get; set; }
         public string Surname { get; set; }
-        public string? ProfileImageUrl {  get; set; }
+        public string? ProfileImageUrl { get; set; } 
         public Genders  Gender { get; set; }
         public DateTime DateOfBirth { get; set; }
     }

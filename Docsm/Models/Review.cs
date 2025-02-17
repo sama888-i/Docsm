@@ -9,10 +9,10 @@ namespace Docsm.Models
         public int DoctorId { get; set; }
         public Doctor Doctor { get; set; }
 
-        public int PatientId { get; set; }
+        public int? PatientId { get; set; }
         public Patient Patient { get; set; }
         [Range(1, 5)]
-        public int Rating { get; set; } 
+        public int? Rating { get; set; } 
 
         public string Comment { get; set; }
 
