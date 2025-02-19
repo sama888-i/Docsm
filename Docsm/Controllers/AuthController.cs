@@ -44,7 +44,7 @@ namespace Docsm.Controllers
             if (!result.Succeeded) return BadRequest(result.Errors);
             await _userManager.AddToRoleAsync(user, nameof(Roles.Patient ));
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            await _service.SendConfirmEmailAsync(user.Email,  token);
+            await _service.SendConfirmEmailAsync(user.Email!,  token);
             return Ok(new{ Message = "User registered successfully"});
         }
         [HttpPost("RegisterForDoctor")]
@@ -60,20 +60,14 @@ namespace Docsm.Controllers
             }
             user=_mapper.Map<User>(dto);
             var result = await _userManager.CreateAsync(user, dto.Password);
-            if (!result.Succeeded) return BadRequest(result.Errors);
-          
-            await _userManager.AddToRoleAsync(user, nameof(Roles.Doctor ));
-            var doctor = new Doctor
-            {
-                UserId = user.Id,
-                DoctorStatus = DoctorStatus.Pending 
-            };
 
-            _context.Doctors.Add(doctor);
+            if (!result.Succeeded) return BadRequest(result.Errors);        
+            
+            await _userManager.AddToRoleAsync(user, nameof(Roles.Doctor ));   
+            
             await _context.SaveChangesAsync();
-
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            await _service.SendConfirmEmailAsync(user.Email, token);
+            await _service.SendConfirmEmailAsync(user.Email! , token);
             return Ok(new { Message = "User registered successfully" });
 
 
@@ -88,7 +82,7 @@ namespace Docsm.Controllers
             {
                 throw new NotFoundException<User>();
             }
-            var result = await _signInManager.PasswordSignInAsync(user, dto.Password, false, false);
+            var result = await _signInManager.PasswordSignInAsync(user, dto.Password, dto.RememberMe , false);
             if (!result.Succeeded)
             {
                 if (result.IsNotAllowed)
@@ -96,12 +90,7 @@ namespace Docsm.Controllers
                 if (result.IsLockedOut)
                     ModelState.AddModelError("", "Wait until" + user.LockoutEnd!.Value.ToString("yyyy-MM-dd HH:mm:ss"));
                 return Unauthorized(new { message = "Username or Password is incorrect" });
-            }
-            var doctor = await _context.Doctors.FirstOrDefaultAsync(d => d.UserId == user.Id);
-            if (doctor != null && doctor.DoctorStatus == DoctorStatus.Pending)
-            {
-                return Unauthorized("Your account is pending approval by the admin.");
-            }
+            }         
             var token = await _jwtTokens.GenerateJwtToken(user);
             return Ok(token);
         }
@@ -144,10 +133,6 @@ namespace Docsm.Controllers
         [HttpPost("ResetPassword")]
         public async Task<IActionResult> ResetPassword(ResetPasswordDto dto)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest("Məlumatlar düzgün deyil.");
-            }
             var user = await _userManager.FindByEmailAsync(dto.Email);
             if (user == null)
             {

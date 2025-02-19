@@ -23,9 +23,7 @@ namespace Docsm.Controllers
             if (dto.startTime >= dto.endTime)
             {
                 return BadRequest("Start time must be less than end time.");
-            }
-
-            if (!ModelState.IsValid) return BadRequest("Girilen melumatlarda yanlisliq var");
+            }          
             await _service.CreateScheduleAsync(dto);
             return Ok();
 
@@ -44,7 +42,6 @@ namespace Docsm.Controllers
             {
                 return BadRequest("Start time must be less than end time.");
             }
-            if (!ModelState.IsValid) return BadRequest("Girilen melumatlarda yanlisliq var");
             await _service.UpdateScheduleAsync(id,dto);
             return Ok();
         }

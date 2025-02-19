@@ -8,7 +8,7 @@ using System.Security.Claims;
 
 namespace Docsm.Services.Implements
 {
-    public class ReviewService(ApoSystemDbContext _context, IHttpContextAccessor _acc) : IReviewService
+    public class ReviewService(ApoSystemDbContext _context, IHttpContextAccessor _acc) :IReviewService
     {
         public async Task AddReviewAsync(ReviewCreateDto dto)
         {
@@ -123,7 +123,8 @@ namespace Docsm.Services.Implements
                 .Include(r => r.Patient)
                    .ThenInclude(r=>r.User)                
                 .Include(r => r.Children!) 
-                     .ThenInclude(r => r.Patient)
+                     .ThenInclude(reply => reply.Patient)
+                         .ThenInclude(p=>p.User)
                 .Select(r => new ReviewGetDto
                 {
                     Id = r.Id,
@@ -134,7 +135,7 @@ namespace Docsm.Services.Implements
                     Replies = r.Children.Select(reply => new ReviewGetDto
                     {
                         Id = reply.Id,
-                        PatientFullname = $"{r.Patient.User.Name} {r.Patient.User.Surname}",
+                        PatientFullname = $"{reply.Patient.User.Name} {reply.Patient.User.Surname}",
                         PatientImage = reply.Patient.User.ProfileImageUrl,
                         Comment = reply.Comment
                     }).ToList()

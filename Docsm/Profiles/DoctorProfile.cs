@@ -8,20 +8,10 @@ namespace Docsm.Profiles
     {
         public DoctorProfile()
         {
-            CreateMap<DoctorCreateDto, User>()
-                .ForMember(d => d.Name, opt => opt.MapFrom(src => src.Name))
-                .ForMember(d => d.Surname, opt => opt.MapFrom(src => src.Surname))
-                .ForMember(d => d.PhoneNumber, opt => opt.MapFrom(src => src.PhoneNumber))
-                .ForMember(d => d.Gender, opt => opt.MapFrom(src => src.Gender))
-                .ForMember(d => d.DateOfBirth, opt => opt.MapFrom(src => src.DateOfBirth));
-
-            CreateMap<DoctorCreateDto, Doctor>()
-                .ForMember(d => d.SpecialtyId, opt => opt.MapFrom(src => src.SpecialtyId))
-                .ForMember(d => d.Adress , opt => opt.MapFrom(src => src.Adress))
-                .ForMember(d => d.AboutMe, opt => opt.MapFrom(src => src.AboutMe))
-                .ForMember(d => d.Services, opt => opt.MapFrom(src => src.Services))
-                .ForMember(d => d.ClinicName, opt => opt.MapFrom(src => src.ClinicName));
-
+            CreateMap<DoctorCreateDto, User>();
+                
+            CreateMap<DoctorCreateDto, Doctor>();
+                
             CreateMap<Doctor, DoctorGetDto>()
                 .ForMember(d => d.Id, opt => opt.MapFrom(s => s.Id))
                 .ForMember(d => d.Name, opt => opt.MapFrom(s => s.User.Name))

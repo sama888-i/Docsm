@@ -7,6 +7,6 @@ namespace Docsm.Services.Interfaces
         Task<List<DoctorGetDto>> GetAllAsync();
         Task<DoctorGetDto> GetByIdAsync(int id);
         Task CreateOrUpdateAsync(DoctorCreateDto dto);
-        Task DeleteAsync(int? id);
+        Task DeleteAsync(int id);
     }
 }

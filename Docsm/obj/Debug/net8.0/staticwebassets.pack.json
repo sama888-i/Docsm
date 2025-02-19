@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\images\\doctors\\jan3pjww.fvl.jpg"
     },
     {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\mjim5ma5.4gf.jpg",
+      "PackagePath": "staticwebassets\\images\\doctors\\mjim5ma5.4gf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\oi05kc13.5pd.jpg",
+      "PackagePath": "staticwebassets\\images\\doctors\\oi05kc13.5pd.jpg"
+    },
+    {
       "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\qpas012o.5to.jpg",
       "PackagePath": "staticwebassets\\images\\doctors\\qpas012o.5to.jpg"
     },
@@ -19,6 +27,14 @@
     {
       "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\patients\\q3ifwbgs.lff.jpg",
       "PackagePath": "staticwebassets\\images\\patients\\q3ifwbgs.lff.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\2kd3qn4e.hun.png",
+      "PackagePath": "staticwebassets\\images\\specialties\\2kd3qn4e.hun.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\3ifxq3u0.t2a.png",
+      "PackagePath": "staticwebassets\\images\\specialties\\3ifxq3u0.t2a.png"
     },
     {
       "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\avmyc1ys.slr.png",

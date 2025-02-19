@@ -7,7 +7,7 @@
         "Action": "Start"
       },
       {
-        "Path": "Testing\\Testing.csproj",
+        "Path": "DocsmMVC\\DocsmMVC.csproj",
         "Action": "Start"
       }
     ]

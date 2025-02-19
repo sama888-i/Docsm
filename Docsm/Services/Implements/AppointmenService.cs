@@ -80,15 +80,17 @@ namespace Docsm.Services.Implements
         public async Task<string> CancelAppointmentAsync(int appointmentId)
         {
             var appointment = await _context.Appointments.FindAsync(appointmentId);
-            if (appointment == null || appointment.Status != AppointmentStatus.Pending)
-                throw new Exception("Görüş tapılmadı və ya ləğv edilə bilməz.");
+            if (appointment == null )
+                throw new Exception("Görüş tapılmadı ");
+            if (appointment.Status != AppointmentStatus.Pending)
+                throw new Exception("Bu gorus artiq tesdiqlenib");
 
             await _service.RefundPayment(appointment.PaymentIntentId);
 
             appointment.Status = AppointmentStatus.Cancelled;
             await _context.SaveChangesAsync();
 
-            return ("Görüş ləğv edildi və pul geri qaytarıldı.");
+            return ("Görüş ləğv edildi və odenis geri qaytarıldı.");
         }
     }
 }

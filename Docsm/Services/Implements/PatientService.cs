@@ -48,7 +48,7 @@ namespace Docsm.Services.Implements
 
             var existingUser = await _userManager.FindByIdAsync(userId);
             if (existingUser == null)
-                throw new NotFoundException("User not found with the given ID.");
+                throw new NotFoundException<User>();
 
            
             var existingPatient = await _context.Patients
@@ -91,9 +91,8 @@ namespace Docsm.Services.Implements
                 await _context.SaveChangesAsync();
             }
         }
-        public async Task DeleteAsync(int? id)
+        public async Task DeleteAsync(int id)
         {
-            if (!id.HasValue) throw new BadRequestException("Girilen id sehvdir");
             var patient = await _context.Patients.FindAsync(id);
             if (patient == null)
                 throw new NotFoundException<Patient>();

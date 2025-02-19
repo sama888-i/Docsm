@@ -10,16 +10,9 @@ namespace Docsm.Profiles
     {
         public PatientProfile()
         {
-            CreateMap<ProfileCreateOrUpdateDto ,User>()
-                 .ForMember(p => p.Name, opt => opt.MapFrom(src => src.Name))
-                 .ForMember(p => p.Surname, opt => opt.MapFrom(src => src.Surname))
-                 .ForMember(p => p.PhoneNumber, opt => opt.MapFrom(src => src.PhoneNumber))
-                 .ForMember(p => p.Gender, opt => opt.MapFrom(src => src.Gender))
-                 .ForMember(p => p.DateOfBirth, opt => opt.MapFrom(src => src.DateOfBirth));
+            CreateMap<ProfileCreateOrUpdateDto, User>();
 
             CreateMap<ProfileCreateOrUpdateDto, Patient>()
-                 .ForMember(p => p.Address, opt => opt.MapFrom(src => src.Address))
-                 .ForMember(p => p.Country, opt => opt.MapFrom(src => src.Country))
                  .ForMember(p => p.BloodGroup, opt => opt.MapFrom(src => (BloodGroups)src.BloodGroup));
 
             CreateMap<Patient,GetPatientProfileDto>()

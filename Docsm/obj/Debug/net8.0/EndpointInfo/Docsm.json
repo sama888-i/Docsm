@@ -5,6 +5,50 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Admin/ApproveDoctor": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "parameters": [
+          {
+            "name": "doctorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Admin/RejectDoctor": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "parameters": [
+          {
+            "name": "doctorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Appointment": {
       "post": {
         "tags": [
@@ -919,17 +963,16 @@
       },
       "BloodGroups": {
         "enum": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7
+          "O_Positive",
+          "O_Negative",
+          "A_Positive",
+          "A_Negative",
+          "B_Positive",
+          "B_Negative",
+          "AB_Positive",
+          "AB_Negative"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "CardDetailsDto": {
         "type": "object",
@@ -1004,11 +1047,10 @@
       },
       "Genders": {
         "enum": [
-          0,
-          1
+          "Male",
+          "Female"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "LoginDto": {
         "type": "object",
@@ -1020,6 +1062,9 @@
           "password": {
             "type": "string",
             "nullable": true
+          },
+          "rememberMe": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

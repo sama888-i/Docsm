@@ -4366,6 +4366,7 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.11",
+      "Newtonsoft.Json >= 13.0.3",
       "Stripe.net >= 47.3.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -4453,6 +4454,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.11, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           },
           "Stripe.net": {
             "target": "Package",

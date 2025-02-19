@@ -37,15 +37,13 @@ namespace Docsm.Services.Implements
           
         }
 
-        public async Task DeleteSpecialtyAsync(int? id)
+        public async Task DeleteSpecialtyAsync(int id)
         {
-            if (!id.HasValue) throw new BadRequestException("Girilen id sehvdir");
-            var specialty = await _context.Specialties.FindAsync(id.Value);
+            var specialty = await _context.Specialties.FindAsync(id);
             if (specialty is null)
                 throw new NotFoundException<Specialty>();
             _context.Specialties.Remove(specialty);
-            await _context.SaveChangesAsync();
-            
+            await _context.SaveChangesAsync();            
         }
 
         public async Task<List<SpecialtyGetDto>> GetAllSpecialtiesAsync()
@@ -60,7 +58,7 @@ namespace Docsm.Services.Implements
             return (specialty);
         }
 
-        public async Task UpdateSpecialtyAsync(SpecialtyUpdateDto dto, int? id)
+        public async Task UpdateSpecialtyAsync(SpecialtyUpdateDto dto, int id)
         {
 
             if (dto.Image != null)
@@ -75,10 +73,8 @@ namespace Docsm.Services.Implements
             if (await _context.Specialties.AnyAsync(p => p.Name == dto.Name))
             {
                 throw new ExistException<Specialty>();
-            }
-           
-            if (!id.HasValue) throw new BadRequestException("Girilen id sehvdir");
-            var specialty = await _context.Specialties.FindAsync(id.Value);
+            }                       
+            var specialty = await _context.Specialties.FindAsync(id);
             if (specialty is null)
                 throw new NotFoundException<Specialty>();
             specialty.Name = dto.Name;

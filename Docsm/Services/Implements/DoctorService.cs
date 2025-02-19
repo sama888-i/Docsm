@@ -3,18 +3,23 @@ using Docsm.DataAccess;
 using Docsm.DTOs.DoctorDtos;
 using Docsm.Exceptions;
 using Docsm.Extensions;
+using Docsm.Helpers.Enums.Status;
 using Docsm.Models;
 using Docsm.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Stripe;
 using System.Security.Claims;
 using static Docsm.Exceptions.ImageException;
 
 namespace Docsm.Services.Implements
 {
     public class DoctorService(ApoSystemDbContext _context,IWebHostEnvironment _enw,
-        IMapper _mapper,UserManager<User> _userManager ,IHttpContextAccessor _acc):IDoctorService
+        IMapper _mapper,UserManager<User> _userManager ,IHttpContextAccessor _acc,
+        IEmailService _service):IDoctorService
     {
+        [Authorize]
         public async Task CreateOrUpdateAsync(DoctorCreateDto dto)
         {
             if (!await _context.Specialties.AnyAsync(x => x.Id == dto.SpecialtyId))
@@ -26,7 +31,7 @@ namespace Docsm.Services.Implements
 
             var existingUser = await _userManager.FindByIdAsync(userId);
             if (existingUser == null)
-                throw new NotFoundException("User not found with the given ID.");
+                throw new NotFoundException<User>();
 
             var existingDoctor = await _context.Doctors .FirstOrDefaultAsync(d => d.UserId == userId);
 
@@ -67,14 +72,17 @@ namespace Docsm.Services.Implements
 
                 var doctor = _mapper.Map<Doctor>(dto);
                 doctor.UserId = existingUser.Id;
+                doctor.DoctorStatus = DoctorStatus.Pending;
+                var subject = "Doccure doctor profile";
+                var body = "Profiliniz yaradilib ,Adminin tesdiqini gozleyin";
+                await _service.SendEmailAsync(doctor.User.Email!, subject, body);
                 await _context.Doctors.AddAsync(doctor);
                 await _context.SaveChangesAsync();
             }
         }
 
-        public async Task DeleteAsync(int? id)
-        {
-            if (!id.HasValue) throw new BadRequestException("Girilen id sehvdir");
+        public async Task DeleteAsync(int id)
+        {            
             var doctor = await _context.Doctors.FindAsync(id);
             if (doctor == null)
                 throw new NotFoundException<Doctor>();

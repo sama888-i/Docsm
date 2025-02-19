@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Docsm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cf159fbfaa564665df0623e52b54ee684176c10")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dca9be8c49b09a199466a42cffa47e11750db1b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Docsm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Docsm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

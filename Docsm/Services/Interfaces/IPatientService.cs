@@ -8,6 +8,6 @@ namespace Docsm.Services.Interfaces
         Task<List<GetPatientProfileDto>> GetAllAsync();
         Task<GetPatientProfileDto> GetByIdAsync(int id);
         Task ProfileCreateOrUpdateAsync(ProfileCreateOrUpdateDto dto);
-        Task DeleteAsync(int? id);
+        Task DeleteAsync(int id);
     }
 }

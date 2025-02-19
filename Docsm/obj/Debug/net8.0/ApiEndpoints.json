@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "Docsm.Controllers.AdminController",
+    "Method": "ApproveDoctor",
+    "RelativePath": "api/Admin/ApproveDoctor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AdminController",
+    "Method": "RejectDoctor",
+    "RelativePath": "api/Admin/RejectDoctor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Docsm.Controllers.AppointmentController",
     "Method": "CreateAppointment",
     "RelativePath": "api/Appointment",
@@ -160,7 +192,7 @@
   },
   {
     "ContainingType": "Docsm.Controllers.DoctorController",
-    "Method": "Create",
+    "Method": "CreateOrUpdate",
     "RelativePath": "api/Doctor",
     "HttpMethod": "POST",
     "IsController": true,
@@ -239,7 +271,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -342,7 +374,7 @@
   },
   {
     "ContainingType": "Docsm.Controllers.PatientController",
-    "Method": "Create",
+    "Method": "CreateOrUpdate",
     "RelativePath": "api/Patient",
     "HttpMethod": "POST",
     "IsController": true,
@@ -406,7 +438,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -537,7 +569,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -563,7 +595,7 @@
       },
       {
         "Name": "id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],

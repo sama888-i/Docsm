@@ -1,8 +1,15 @@
-﻿namespace Docsm.Helpers.Enums
+﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+
+namespace Docsm.Helpers.Enums
 {
     public enum Genders
     {
-        Male=0,
-        Female=1
+        [JsonConverter(typeof(StringEnumConverter))]
+        Male =0,
+        [JsonConverter(typeof(StringEnumConverter))]
+        Female =1
     }
 }

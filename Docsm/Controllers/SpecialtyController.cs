@@ -23,25 +23,21 @@ namespace Docsm.Controllers
         [HttpPost]
         [Consumes("multipart/form-data")]
         public async Task<IActionResult>Create(SpecialtyCreateDto dto)
-        {
-           
-            if (!ModelState.IsValid) return BadRequest("Girilen melumatlarda yanlisliq var");
+        {           
             await _service.CreateSpecialtyAsync(dto);
             return Ok();
 
         }
         [HttpDelete]
-        public async Task<IActionResult>Delete(int? id)
+        public async Task<IActionResult>Delete(int id)
         {
             await _service.DeleteSpecialtyAsync(id);
             return Ok();
         }
         [HttpPut]
         [Consumes("multipart/form-data")]
-        public async Task<IActionResult>Update(SpecialtyUpdateDto dto,int?id)
+        public async Task<IActionResult>Update(SpecialtyUpdateDto dto,int id)
         {
-
-            if(!ModelState.IsValid)return BadRequest("Girilen melumatlarda yanlisliq var");
             await _service.UpdateSpecialtyAsync(dto,id);
             return Ok();
         }

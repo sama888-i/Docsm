@@ -26,16 +26,14 @@ namespace Docsm.Controllers
         }
         [HttpPost]
         [Consumes("multipart/form-data")]
-        public async Task<IActionResult> Create(DoctorCreateDto dto)
+        public async Task<IActionResult> CreateOrUpdate(DoctorCreateDto dto)
         {
-
-            if (!ModelState.IsValid) return BadRequest("Girilen melumatlarda yanlisliq var");
             await _service.CreateOrUpdateAsync(dto);
             return Ok();
 
         }
         [HttpDelete]
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int id)
         {
             await _service.DeleteAsync(id);
             return Ok();
