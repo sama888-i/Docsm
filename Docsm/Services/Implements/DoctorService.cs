@@ -75,9 +75,10 @@ namespace Docsm.Services.Implements
                 doctor.DoctorStatus = DoctorStatus.Pending;
                 var subject = "Doccure doctor profile";
                 var body = "Profiliniz yaradilib ,Adminin tesdiqini gozleyin";
-                await _service.SendEmailAsync(doctor.User.Email!, subject, body);
                 await _context.Doctors.AddAsync(doctor);
                 await _context.SaveChangesAsync();
+                await _service.SendEmailAsync(doctor.User.Email!, subject, body);
+               
             }
         }
 
@@ -108,8 +109,5 @@ namespace Docsm.Services.Implements
             return _mapper.Map<DoctorGetDto>(doctor);
         }
 
-       
-
-       
     }
 }

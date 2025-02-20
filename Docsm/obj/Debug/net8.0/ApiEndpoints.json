@@ -93,8 +93,8 @@
         "IsRequired": false
       },
       {
-        "Name": "token",
-        "Type": "System.String",
+        "Name": "code",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -192,8 +192,40 @@
   },
   {
     "ContainingType": "Docsm.Controllers.DoctorController",
-    "Method": "CreateOrUpdate",
+    "Method": "Delete",
     "RelativePath": "api/Doctor",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.DoctorController",
+    "Method": "GetById",
+    "RelativePath": "api/Doctor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.DoctorController",
+    "Method": "CreateOrUpdate",
+    "RelativePath": "api/Doctor/DoctorProfile",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -257,38 +289,6 @@
         "Name": "Image",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Docsm.Controllers.DoctorController",
-    "Method": "Delete",
-    "RelativePath": "api/Doctor",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Docsm.Controllers.DoctorController",
-    "Method": "GetById",
-    "RelativePath": "api/Doctor/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -374,8 +374,40 @@
   },
   {
     "ContainingType": "Docsm.Controllers.PatientController",
-    "Method": "CreateOrUpdate",
+    "Method": "Delete",
     "RelativePath": "api/Patient",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.PatientController",
+    "Method": "GetById",
+    "RelativePath": "api/Patient/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.PatientController",
+    "Method": "CreateOrUpdate",
+    "RelativePath": "api/Patient/PatientProfile",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -424,38 +456,6 @@
         "Name": "BloodGroup",
         "Type": "System.String",
         "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Docsm.Controllers.PatientController",
-    "Method": "Delete",
-    "RelativePath": "api/Patient",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Docsm.Controllers.PatientController",
-    "Method": "GetById",
-    "RelativePath": "api/Patient/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []

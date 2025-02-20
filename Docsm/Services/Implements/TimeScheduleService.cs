@@ -10,10 +10,11 @@ namespace Docsm.Services.Implements
     public class TimeScheduleService(ApoSystemDbContext _context) : ITimeScheduleService
     {
         public async Task CreateScheduleAsync(CreateScheduleDto dto)
-        {
+        {   
             var schedule = new DoctorTimeSchedule
             { 
                 DoctorId = dto.DoctorId,
+                AppointmentDate =dto.AppointmentDate ,
                 StartTime =dto.startTime,
                 EndTime = dto.endTime
             };
@@ -40,6 +41,7 @@ namespace Docsm.Services.Implements
                 .Select(x => new GetScheduleDto 
                 { 
                     Id = x.Id,
+                    AppointmentDate =x.AppointmentDate ,
                     startTime = x.StartTime,
                     endTime = x.EndTime,
                     IsAvailable=x.IsAvailable, 
@@ -57,7 +59,8 @@ namespace Docsm.Services.Implements
             if (schedule == null)
                 throw new NotFoundException<DoctorTimeSchedule>();
             if (!schedule.IsAvailable)
-                throw new Exception("This time is already booked and cannot be deleted");
+                throw new Exception("This time is already booked and cannot be changed");
+            schedule.AppointmentDate = dto.AppointmentDate;
             schedule.StartTime = dto.startTime;
             schedule.EndTime = dto.endTime;
             await _context.SaveChangesAsync();

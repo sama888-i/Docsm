@@ -41,7 +41,8 @@ namespace Docsm
             services.AddScoped<IAppointmentService ,AppointmentService>();
             services.AddScoped<IReviewService, Docsm.Services.Implements.ReviewService>();
             services.AddScoped<IPaymentService, PaymentService>();
-           
+
+            services.AddMemoryCache();
             return services;
         }
 

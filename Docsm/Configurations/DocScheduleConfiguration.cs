@@ -10,9 +10,11 @@ namespace Docsm.Configurations
         {
            
             builder.HasIndex(d => new { d.DoctorId, d.StartTime })
-                   .IsUnique(); 
+                   .IsUnique();
+            builder.Property(d => d.AppointmentDate)
+                   .IsRequired();
+                  
 
-           
             builder.Property(d => d.StartTime)
                    .IsRequired();
           

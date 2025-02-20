@@ -23,10 +23,10 @@ namespace Docsm.Services.Implements
 
             var schedule = await _context.DoctorTimeSchedules
                 .Include(d => d.Doctor)
-                .FirstOrDefaultAsync(s => s.Id == dto.DoctorScheduleId);
+                .FirstOrDefaultAsync(s => s.Id == dto.DoctorScheduleId &&s.DoctorId ==dto.DoctorId);
 
             if (schedule == null || !schedule.IsAvailable)
-                throw new Exception("Seçilmiş vaxt mövcud deyil.");
+                throw new Exception("Seçilmiş vaxt mövcud deyil ve ya hekim secimi yanlisdir");
 
             decimal price = schedule.Doctor.PerAppointPrice;
 

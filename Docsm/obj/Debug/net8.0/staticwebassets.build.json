@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pOYPk3NAWBLPDWlORd37n+wWfFh1u7HvNmAk5iTKyNU=",
+  "Hash": "1meg5TMLaXCXHF8IIKuMSH1LWhZl6vj4n940jq1woyc=",
   "Source": "Docsm",
   "BasePath": "_content/Docsm",
   "Mode": "Default",
@@ -36,6 +36,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\doctors\\3bqznxtz.e1q.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\bayng23v.wav.jpg",
+      "SourceId": "Docsm",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\",
+      "BasePath": "_content/Docsm",
+      "RelativePath": "images/doctors/bayng23v.wav#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8yfkbuegv5",
+      "Integrity": "QG+epTKuq/P8CykLoCzEEAR4Bho+XlEQ8b1FeViHq4w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\doctors\\bayng23v.wav.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\ihfznuua.hhd.jpg",
+      "SourceId": "Docsm",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\",
+      "BasePath": "_content/Docsm",
+      "RelativePath": "images/doctors/ihfznuua.hhd#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8yfkbuegv5",
+      "Integrity": "QG+epTKuq/P8CykLoCzEEAR4Bho+XlEQ8b1FeViHq4w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\doctors\\ihfznuua.hhd.jpg"
     },
     {
       "Identity": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\jan3pjww.fvl.jpg",
@@ -370,6 +412,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-aHSS5M84W05vqml9Rw9OvVj56qBUTD50VYz4BALycyg="
+        }
+      ]
+    },
+    {
+      "Route": "images/doctors/bayng23v.wav.8yfkbuegv5.jpg",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\bayng23v.wav.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QG+epTKuq/P8CykLoCzEEAR4Bho+XlEQ8b1FeViHq4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 12:41:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8yfkbuegv5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/doctors/bayng23v.wav.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QG+epTKuq/P8CykLoCzEEAR4Bho+XlEQ8b1FeViHq4w="
+        }
+      ]
+    },
+    {
+      "Route": "images/doctors/bayng23v.wav.jpg",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\bayng23v.wav.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QG+epTKuq/P8CykLoCzEEAR4Bho+XlEQ8b1FeViHq4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 12:41:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QG+epTKuq/P8CykLoCzEEAR4Bho+XlEQ8b1FeViHq4w="
+        }
+      ]
+    },
+    {
+      "Route": "images/doctors/ihfznuua.hhd.8yfkbuegv5.jpg",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\ihfznuua.hhd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QG+epTKuq/P8CykLoCzEEAR4Bho+XlEQ8b1FeViHq4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 12:43:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8yfkbuegv5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/doctors/ihfznuua.hhd.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QG+epTKuq/P8CykLoCzEEAR4Bho+XlEQ8b1FeViHq4w="
+        }
+      ]
+    },
+    {
+      "Route": "images/doctors/ihfznuua.hhd.jpg",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\ihfznuua.hhd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QG+epTKuq/P8CykLoCzEEAR4Bho+XlEQ8b1FeViHq4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 12:43:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QG+epTKuq/P8CykLoCzEEAR4Bho+XlEQ8b1FeViHq4w="
         }
       ]
     },

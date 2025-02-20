@@ -1,4 +1,5 @@
 ﻿using Docsm.Models.Common;
+using System.ComponentModel.DataAnnotations;
 
 namespace Docsm.Models
 {
@@ -6,8 +7,11 @@ namespace Docsm.Models
     {
         public int DoctorId {  get; set; }
         public Doctor Doctor { get; set; }
-        public DateTime StartTime { get; set; }
-        public DateTime EndTime { get; set; }
+        public DateOnly  AppointmentDate { get; set; }
+        [DataType(DataType.Time)]
+        public TimeOnly StartTime { get; set; }
+        [DataType(DataType.Time)]
+        public TimeOnly EndTime { get; set; }
         public bool IsAvailable { get; set; } = true;
         public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
     }

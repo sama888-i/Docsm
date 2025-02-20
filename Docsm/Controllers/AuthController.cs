@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using System.IdentityModel.Tokens.Jwt;
 
 
@@ -24,7 +25,8 @@ namespace Docsm.Controllers
         SignInManager<User> _signInManager,
         IMapper _mapper ,
         jwtTokens  _jwtTokens,
-        IEmailService _service
+        IEmailService _service,
+        IMemoryCache _cache
         
         ) : ControllerBase
     {
@@ -43,8 +45,7 @@ namespace Docsm.Controllers
             var result = await _userManager.CreateAsync(user, dto.Password);
             if (!result.Succeeded) return BadRequest(result.Errors);
             await _userManager.AddToRoleAsync(user, nameof(Roles.Patient ));
-            string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            await _service.SendConfirmEmailAsync(user.Email!,  token);
+            await _service.SendConfirmEmailAsync(user.Email!);
             return Ok(new{ Message = "User registered successfully"});
         }
         [HttpPost("RegisterForDoctor")]
@@ -66,8 +67,8 @@ namespace Docsm.Controllers
             await _userManager.AddToRoleAsync(user, nameof(Roles.Doctor ));   
             
             await _context.SaveChangesAsync();
-            string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            await _service.SendConfirmEmailAsync(user.Email! , token);
+           
+            await _service.SendConfirmEmailAsync(user.Email!);
             return Ok(new { Message = "User registered successfully" });
 
 
@@ -98,26 +99,30 @@ namespace Docsm.Controllers
 
 
         [HttpGet("EmailConfirm")]
-        public async Task<IActionResult> EmailConfirm(string email,string token)
+        public async Task<IActionResult> EmailConfirm(string email,int code)
         {
 
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(token))
+            if (string.IsNullOrEmpty(email) ||code<=0)
             {
                 return BadRequest("Məlumatlar düzgün deyil.");
-            }           
+            }
+            if (!_cache.TryGetValue(email, out int cachedCode) || cachedCode != code)
+            {
+                throw new CodeInvalidException();
+            }
             var user = await _userManager.FindByEmailAsync(email);
             if (email == null)
             {
                 throw new NotFoundException<User>();
-            }           
-            var result = await _userManager.ConfirmEmailAsync(user, token);
-            if (result.Succeeded)
-            {
-                return Ok("Email təsdiqləndi.");
             }
-            return BadRequest("Token düzgün deyil.");
+            user!.EmailConfirmed = true;
+            await _userManager.UpdateAsync(user);
+            _cache.Remove(email);
+            return Ok("Email tesdiqlendi");
+            
 
         }
+
         [HttpPost("ForgotPassword")]
         public async Task<IActionResult>ForgotPassword(ForgotPasswordDto dto)
         {
@@ -128,19 +133,34 @@ namespace Docsm.Controllers
                 throw new NotFoundException<User>();
             }
             await _service.SendResetPasswordAsync(user.Email);
-            return Ok("Emaile sifrenin sifirlanmasi ucun token gonderildi");
+            return Ok("Emaile sifrenin sifirlanmasi ucun kod gonderildi");
         }
+
+
+
         [HttpPost("ResetPassword")]
         public async Task<IActionResult> ResetPassword(ResetPasswordDto dto)
         {
+            if (string.IsNullOrEmpty(dto.Email) || dto.Code <= 0 || string.IsNullOrEmpty(dto.NewPassword))
+            {
+                return BadRequest("Məlumatlar düzgün deyil.");
+            }
+
+            if (!_cache.TryGetValue(dto.Email, out int cachedCode)||cachedCode!=dto.Code)
+            {
+                throw new CodeInvalidException();
+            }
+
             var user = await _userManager.FindByEmailAsync(dto.Email);
             if (user == null)
             {
                 throw new NotFoundException<User>();
             }
-            var result = await _userManager.ResetPasswordAsync(user, dto.Token, dto.NewPassword);
+            var resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var result = await _userManager.ResetPasswordAsync(user,resetToken, dto.NewPassword);
             if (result.Succeeded)
             {
+                _cache.Remove(dto.Email);
                 return Ok("Şifrə uğurla sıfırlandı.");
             }
 

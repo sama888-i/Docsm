@@ -16,7 +16,8 @@ namespace Docsm.Controllers
         [HttpPost("ApproveDoctor")]
         public async Task<IActionResult>ApproveDoctor(int doctorId)
         {
-            var doctor=await _context.Doctors.Include(x=>x.User).FirstOrDefaultAsync(x=>x.Id==doctorId);
+            var doctor=await _context.Doctors.Where(d=>d.DoctorStatus!=DoctorStatus.Approved)
+                .Include(x=>x.User).FirstOrDefaultAsync(x=>x.Id==doctorId);
             if (doctor == null)
                 throw new NotFoundException<Doctor>();
             doctor.DoctorStatus = DoctorStatus.Approved;
@@ -29,7 +30,8 @@ namespace Docsm.Controllers
         [HttpPost("RejectDoctor")]
         public async Task<IActionResult>RejectDoctor(int doctorId)
         {
-            var doctor = await _context.Doctors.FirstOrDefaultAsync(x => x.Id == doctorId);
+            var doctor = await _context.Doctors.Where(d=>d.DoctorStatus!=DoctorStatus.Rejected)
+                .Include(x => x.User).FirstOrDefaultAsync(x => x.Id == doctorId);
             if (doctor == null)
                 throw new NotFoundException<Doctor>();
             doctor.DoctorStatus = DoctorStatus.Rejected;

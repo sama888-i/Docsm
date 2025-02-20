@@ -24,10 +24,6 @@ namespace Docsm.Configurations
              .IsRequired()  
              .HasMaxLength(256);
 
-            builder.Property(d => d.Latitude);
-
-            builder.Property(d => d.Longitude);
-
             builder.Property(d => d.AboutMe)
                 .HasMaxLength(2000);
             builder.Property(d => d.Services)

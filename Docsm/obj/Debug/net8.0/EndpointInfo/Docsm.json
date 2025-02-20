@@ -231,10 +231,11 @@
             }
           },
           {
-            "name": "token",
+            "name": "code",
             "in": "query",
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -318,6 +319,51 @@
           }
         }
       },
+      "delete": {
+        "tags": [
+          "Doctor"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doctor/{id}": {
+      "get": {
+        "tags": [
+          "Doctor"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doctor/DoctorProfile": {
       "post": {
         "tags": [
           "Doctor"
@@ -424,49 +470,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Doctor"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Doctor/{id}": {
-      "get": {
-        "tags": [
-          "Doctor"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -595,6 +598,51 @@
           }
         }
       },
+      "delete": {
+        "tags": [
+          "Patient"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Patient/{id}": {
+      "get": {
+        "tags": [
+          "Patient"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Patient/PatientProfile": {
       "post": {
         "tags": [
           "Patient"
@@ -678,49 +726,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Patient"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Patient/{id}": {
-      "get": {
-        "tags": [
-          "Patient"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -947,6 +952,10 @@
       "AppointmentCreateDto": {
         "type": "object",
         "properties": {
+          "doctorId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "doctorScheduleId": {
             "type": "integer",
             "format": "int32"
@@ -991,13 +1000,17 @@
             "type": "integer",
             "format": "int32"
           },
+          "appointmentDate": {
+            "type": "string",
+            "format": "date"
+          },
           "startTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "time"
           },
           "endTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "time"
           }
         },
         "additionalProperties": false
@@ -1064,7 +1077,8 @@
             "nullable": true
           },
           "rememberMe": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           }
         },
         "additionalProperties": false
@@ -1109,9 +1123,9 @@
             "type": "string",
             "nullable": true
           },
-          "token": {
-            "type": "string",
-            "nullable": true
+          "code": {
+            "type": "integer",
+            "format": "int32"
           },
           "newPassword": {
             "type": "string",
@@ -1135,11 +1149,6 @@
           "comment": {
             "type": "string",
             "nullable": true
-          },
-          "parentId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1151,13 +1160,17 @@
             "type": "integer",
             "format": "int32"
           },
+          "appointmentDate": {
+            "type": "string",
+            "format": "date"
+          },
           "startTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "time"
           },
           "endTime": {
             "type": "string",
-            "format": "date-time"
+            "format": "time"
           }
         },
         "additionalProperties": false

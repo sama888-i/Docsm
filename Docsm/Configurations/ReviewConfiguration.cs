@@ -22,9 +22,7 @@ namespace Docsm.Configurations
               .IsRequired()
               .HasMaxLength(1000);
 
-            builder.HasOne(x => x.Parent)
-                .WithMany(x => x.Children)
-                .HasForeignKey(x => x.ParentId);
+            
         }
     }
 }

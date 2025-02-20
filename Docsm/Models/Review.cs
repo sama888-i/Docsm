@@ -16,9 +16,5 @@ namespace Docsm.Models
 
         public string Comment { get; set; }
 
-        public int? ParentId { get; set; }
-        public Review? Parent { get; set; }
-        public IEnumerable<Review>? Children { get; set; }
-
     }
 }

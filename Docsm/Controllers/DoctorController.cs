@@ -24,7 +24,7 @@ namespace Docsm.Controllers
             var doctor = await _service.GetByIdAsync(id);
             return Ok(doctor);
         }
-        [HttpPost]
+        [HttpPost("DoctorProfile")]
         [Consumes("multipart/form-data")]
         public async Task<IActionResult> CreateOrUpdate(DoctorCreateDto dto)
         {
