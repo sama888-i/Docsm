@@ -60,7 +60,6 @@ namespace Docsm.Services.Implements
 
         public async Task UpdateSpecialtyAsync(SpecialtyUpdateDto dto, int id)
         {
-
             if (dto.Image != null)
             {
                 if (!dto.Image.IsValidType("image"))

@@ -36,49 +36,32 @@ namespace Docsm.Services.Implements
             var existingDoctor = await _context.Doctors .FirstOrDefaultAsync(d => d.UserId == userId);
 
             if (existingDoctor != null)
-            {
-           
+            {         
                 _mapper.Map(dto, existingDoctor);
-
                 if (dto.Image != null)
                 {
-                    if (!dto.Image.IsValidType("image"))
-                        throw new InvalidImageTypeException("Image type must be an image");
-
-                    if (!dto.Image.IsValidSize(888))
-                        throw new InvalidImageSizeException("Image length must be less than 888kb");
-
                     existingDoctor.User.ProfileImageUrl = await dto.Image.UploadAsync(_enw.WebRootPath, "images", "doctors");
-                }
-
-              
+                }            
                 await _context.SaveChangesAsync();
             }
             else
-            {
-   
+            {   
                 _mapper.Map(dto, existingUser);
 
                 if (dto.Image != null)
                 {
-                    if (!dto.Image.IsValidType("image"))
-                        throw new InvalidImageTypeException("Image type must be an image");
-
-                    if (!dto.Image.IsValidSize(888))
-                        throw new InvalidImageSizeException("Image length must be less than 888kb");
-
                     existingUser.ProfileImageUrl = await dto.Image.UploadAsync(_enw.WebRootPath, "images", "doctors");
                 }
 
                 var doctor = _mapper.Map<Doctor>(dto);
                 doctor.UserId = existingUser.Id;
-                doctor.DoctorStatus = DoctorStatus.Pending;
-                var subject = "Doccure doctor profile";
-                var body = "Profiliniz yaradilib ,Adminin tesdiqini gozleyin";
+                doctor.DoctorStatus = DoctorStatus.Pending;               
                 await _context.Doctors.AddAsync(doctor);
                 await _context.SaveChangesAsync();
-                await _service.SendEmailAsync(doctor.User.Email!, subject, body);
-               
+
+                var subject = "Doccure doctor profile";
+                var body = "Profiliniz yaradilib ,Adminin tesdiqini gozleyin";
+                await _service.SendEmailAsync(doctor.User.Email!, subject, body);              
             }
         }
 

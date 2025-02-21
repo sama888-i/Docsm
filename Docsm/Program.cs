@@ -1,8 +1,9 @@
-
 using Docsm.DataAccess;
 using Docsm.Extensions;
 using Docsm.Helpers;
 using Docsm.Models;
+using FluentValidation.AspNetCore;
+using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -65,6 +66,10 @@ namespace Docsm
                 opt.Lockout.MaxFailedAccessAttempts = 3;
                 opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(2);
             }).AddDefaultTokenProviders().AddEntityFrameworkStores<ApoSystemDbContext>();
+
+            builder.Services.AddFluentValidationAutoValidation()
+                .AddFluentValidationClientsideAdapters();
+            builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 
             builder.Services.AddAuth(builder.Configuration);
             builder.Services.AddJwtOptions(builder.Configuration);

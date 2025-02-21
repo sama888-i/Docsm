@@ -4,8 +4,6 @@ namespace Docsm.DTOs.DoctorDtos
 {
     public class DoctorCreateDto
     {
-       
-      
         public string PhoneNumber {  get; set; }
         public Genders  Gender {  get; set; }
         public string Surname {  get; set; }

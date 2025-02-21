@@ -4,6 +4,7 @@ using Docsm.Exceptions;
 using Docsm.Extensions;
 using Docsm.Models;
 using Docsm.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,7 @@ namespace Docsm.Controllers
     public class SpecialtyController(ISpecialtyService _service) : ControllerBase
     {
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAllSpecialties()
         {
            

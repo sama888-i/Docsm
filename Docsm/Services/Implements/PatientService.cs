@@ -59,32 +59,17 @@ namespace Docsm.Services.Implements
                 _mapper.Map(dto, existingPatient);
                 if (dto.Image != null)
                 {
-                    if (!dto.Image.IsValidType("image"))
-                        throw new InvalidImageTypeException("Image type must be an image");
-
-                    if (!dto.Image.IsValidSize(888))
-                        throw new InvalidImageSizeException("Image length must be less than 888kb");
-
-                    existingPatient.User.ProfileImageUrl = await dto.Image.UploadAsync(_enw.WebRootPath, "images", "patients");
+                  existingPatient.User.ProfileImageUrl = await dto.Image.UploadAsync(_enw.WebRootPath, "images", "patients");
                 }
-
                 await _context.SaveChangesAsync();
             }
             else
             {
-
                 _mapper.Map(dto, existingUser);
                 if (dto.Image != null)
                 {
-                    if (!dto.Image.IsValidType("image"))
-                        throw new InvalidImageTypeException("Image type must be an image");
-
-                    if (!dto.Image.IsValidSize(888))
-                        throw new InvalidImageSizeException("Image length must be less than 888kb");
-
-                    existingUser.ProfileImageUrl = await dto.Image.UploadAsync(_enw.WebRootPath, "images", "patients");
+                  existingUser.ProfileImageUrl = await dto.Image.UploadAsync(_enw.WebRootPath, "images", "patients");
                 }
-
                 var patient = _mapper.Map<Patient>(dto);
                 patient.UserId = existingUser.Id;
                 await _context.Patients.AddAsync(patient);

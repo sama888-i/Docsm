@@ -33,7 +33,6 @@ namespace Docsm.Configurations
                 .HasMaxLength(50);
 
             builder.Property(d => d.ClinicAddress)
-                .IsRequired(false)
                 .HasMaxLength(50);
             builder.Property(d => d.DoctorStatus)
                 .HasConversion(

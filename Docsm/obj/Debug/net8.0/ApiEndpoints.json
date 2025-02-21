@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "Docsm.Controllers.AdminController",
+    "Method": "GetDoctors",
+    "RelativePath": "api/Admin/GetDoctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AdminController",
     "Method": "RejectDoctor",
     "RelativePath": "api/Admin/RejectDoctor",
     "HttpMethod": "POST",
@@ -134,22 +150,6 @@
   },
   {
     "ContainingType": "Docsm.Controllers.AuthController",
-    "Method": "Register",
-    "RelativePath": "api/Auth/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "Docsm.DTOs.AuthDtos.RegisterDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Docsm.Controllers.AuthController",
     "Method": "DoctorRegister",
     "RelativePath": "api/Auth/RegisterForDoctor",
     "HttpMethod": "POST",
@@ -159,6 +159,22 @@
       {
         "Name": "dto",
         "Type": "Docsm.DTOs.AuthDtos.DoctorRegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/RegisterForPatient",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Docsm.DTOs.AuthDtos.RegisterDto",
         "IsRequired": true
       }
     ],

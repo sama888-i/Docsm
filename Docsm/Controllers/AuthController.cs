@@ -30,7 +30,7 @@ namespace Docsm.Controllers
         
         ) : ControllerBase
     {
-        [HttpPost("register")]
+        [HttpPost("RegisterForPatient")]
         public async Task<IActionResult>Register(RegisterDto dto)
         {
             var user=await _userManager.Users.Where(x=>x.UserName==dto.UserName ||x.Email==dto.Email).FirstOrDefaultAsync();
@@ -87,9 +87,9 @@ namespace Docsm.Controllers
             if (!result.Succeeded)
             {
                 if (result.IsNotAllowed)
-                    ModelState.AddModelError("", "You must confirm your account");
+                   throw new BadRequestException( "You must confirm your account");
                 if (result.IsLockedOut)
-                    ModelState.AddModelError("", "Wait until" + user.LockoutEnd!.Value.ToString("yyyy-MM-dd HH:mm:ss"));
+                   throw new BadRequestException("Wait until " + user.LockoutEnd!.Value.ToString("yyyy-MM-dd HH:mm:ss"));
                 return Unauthorized(new { message = "Username or Password is incorrect" });
             }         
             var token = await _jwtTokens.GenerateJwtToken(user);

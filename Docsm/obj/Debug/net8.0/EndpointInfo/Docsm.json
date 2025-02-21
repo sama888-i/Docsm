@@ -49,6 +49,27 @@
         }
       }
     },
+    "/api/Admin/GetDoctors": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/DoctorStatus"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Appointment": {
       "post": {
         "tags": [
@@ -124,7 +145,7 @@
         }
       }
     },
-    "/api/Auth/register": {
+    "/api/Auth/RegisterForPatient": {
       "post": {
         "tags": [
           "Auth"
@@ -1048,6 +1069,14 @@
         },
         "additionalProperties": false
       },
+      "DoctorStatus": {
+        "enum": [
+          "Approved",
+          "Rejected",
+          "Pending"
+        ],
+        "type": "string"
+      },
       "ForgotPasswordDto": {
         "type": "object",
         "properties": {
@@ -1074,6 +1103,7 @@
           },
           "password": {
             "type": "string",
+            "format": "password",
             "nullable": true
           },
           "rememberMe": {
@@ -1104,6 +1134,7 @@
           },
           "password": {
             "type": "string",
+            "format": "password",
             "nullable": true
           },
           "dateOfBirth": {
@@ -1129,6 +1160,7 @@
           },
           "newPassword": {
             "type": "string",
+            "format": "password",
             "nullable": true
           }
         },
