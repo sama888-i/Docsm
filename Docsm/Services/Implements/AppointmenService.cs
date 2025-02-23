@@ -35,25 +35,30 @@ namespace Docsm.Services.Implements
             {
                 throw new BadRequestException("Ödəniş alınmadı, zəhmət olmasa yenidən yoxlayın.");
             }
-
-
-            var appointment = new Appointment
-            {
-                DoctorId = schedule.DoctorId,
-                PatientId = patient.Id,
-                DoctorScheduleId = dto.DoctorScheduleId,
-                Status = AppointmentStatus.Pending,
-                ReasonAppointment = dto.ReasonAppointment,
-                PaymentIntentId = paymentIntentId
-            };
-
             using var transaction = await _context.Database.BeginTransactionAsync();
             try
             {
+                var appointment = new Appointment
+                {
+                    DoctorId = schedule.DoctorId,
+                    PatientId = patient.Id,
+                    DoctorScheduleId = dto.DoctorScheduleId,
+                    Status = AppointmentStatus.Pending,
+                    ReasonAppointment = dto.ReasonAppointment,                 
+                };
                 _context.Appointments.Add(appointment);
+                await _context.SaveChangesAsync();
+                var payment = new Payment 
+                {
+                    Amount =price ,
+                    Currency ="azn",
+                    PaymentStatus = PaymentStatus.Pending,
+                    PaymentIntentId = paymentIntentId,
+                    AppointmentId=appointment.Id
+                };
+                await _context.Payments.AddAsync(payment);
                 schedule.IsAvailable = false;
                 await _context.SaveChangesAsync();
-
                 await transaction.CommitAsync();
                 return ("Görüş yaradıldı , Həkimin təsdiqi gözlənilir.");
             }
@@ -65,13 +70,15 @@ namespace Docsm.Services.Implements
         }
         public async Task<string> ConfirmAppointmentAsync(int appointmentId)
         {
-            var appointment = await _context.Appointments.FindAsync(appointmentId);
+            var appointment = await _context.Appointments
+                .Include(x=>x.Payment).FirstOrDefaultAsync(x=>x.Id ==appointmentId);
             if (appointment == null || appointment.Status != AppointmentStatus.Pending)
                 throw new Exception("Görüş tapılmadı və ya təsdiqlənə bilməz.");
 
-            await _service.CapturePayment(appointment.PaymentIntentId);
+            await _service.CapturePayment(appointment.Payment.PaymentIntentId);
 
             appointment.Status = AppointmentStatus.Confirmed;
+            appointment.Payment.PaymentStatus = PaymentStatus.Paid;
             await _context.SaveChangesAsync();
 
             return ("Görüş təsdiqləndi və ödəniş tamamlandı.");
@@ -79,23 +86,26 @@ namespace Docsm.Services.Implements
 
         public async Task<string> CancelAppointmentAsync(int appointmentId)
         {
-            var appointment = await _context.Appointments.FindAsync(appointmentId);
+            var appointment = await _context.Appointments
+                .Include(x => x.Payment).FirstOrDefaultAsync(x => x.Id == appointmentId);
             if (appointment == null)
                 throw new NotFoundException<Appointment>();
             if (appointment.Status != AppointmentStatus.Pending)
                 throw new Exception("Bu gorus artiq tesdiqlenib");
 
-            await _service.RefundPayment(appointment.PaymentIntentId);
+            await _service.RefundPayment(appointment.Payment.PaymentIntentId);
 
             appointment.Status = AppointmentStatus.Cancelled;
+            appointment.Payment.PaymentStatus =PaymentStatus.Refunded;
             await _context.SaveChangesAsync();
 
             return ("Görüş ləğv edildi və odenis geri qaytarıldı.");
         }
         public async Task<string>CompleteAppointmentAsync(int appointmentId)
         {
-            var appointment = await _context.Appointments.FindAsync(appointmentId);
-            if(appointment == null )
+            var appointment = await _context.Appointments
+                .Include(x => x.Payment).FirstOrDefaultAsync(x => x.Id == appointmentId);
+            if (appointment == null )
                 throw new NotFoundException<Appointment>();
             if (appointment.Status == AppointmentStatus.Confirmed)
             {

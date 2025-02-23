@@ -67,7 +67,23 @@
     "ContainingType": "Docsm.Controllers.AppointmentController",
     "Method": "CancelAppointment",
     "RelativePath": "api/Appointment/Cancel",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AppointmentController",
+    "Method": "CompleteAppointment",
+    "RelativePath": "api/Appointment/Complete",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [

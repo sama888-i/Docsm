@@ -63,7 +63,7 @@ namespace Docsm.Controllers
                 x.User.Name,
                 x.User.Surname,
                 x.User.ProfileImageUrl,
-                x.SpecialtyId,
+                SpecialtyName=x.Specialty.Name,
                 x.Adress ,
                 x.ClinicName ,
                 x.AboutMe,

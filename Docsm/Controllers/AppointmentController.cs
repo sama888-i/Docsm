@@ -28,11 +28,18 @@ namespace Docsm.Controllers
             return Ok();
 
         }
-        [HttpDelete("Cancel")]
+        [HttpPut("Cancel")]
         public async Task<IActionResult> CancelAppointment(int appointmentId)
         {
             await _service.CancelAppointmentAsync(appointmentId);
             return Ok();
         }
+        [HttpPut("Complete")]
+        public async Task<IActionResult>CompleteAppointment(int appointmentId)
+        {
+            await _service.CompleteAppointmentAsync(appointmentId);
+            return Ok();
+        }
+        
     }
 }

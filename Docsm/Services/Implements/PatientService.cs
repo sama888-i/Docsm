@@ -86,7 +86,7 @@ namespace Docsm.Services.Implements
         }
         public async Task GetPatientAppointmentsAsync(int patientId)
         {
-            var appointment = await _context.Appointments.Include(x=>x.PaymentIntentId)
+            var appointment = await _context.Appointments
                 .Where(x => x.PatientId == patientId)
                 .Select(x =>new
                 {

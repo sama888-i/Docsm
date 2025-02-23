@@ -124,7 +124,29 @@
       }
     },
     "/api/Appointment/Cancel": {
-      "delete": {
+      "put": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "appointmentId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Appointment/Complete": {
+      "put": {
         "tags": [
           "Appointment"
         ],

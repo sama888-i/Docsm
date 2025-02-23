@@ -15,6 +15,7 @@ namespace Docsm.DataAccess
         public DbSet<DoctorTimeSchedule> DoctorTimeSchedules { get; set; }    
         public DbSet<Specialty>Specialties { get; set; }
         public DbSet<Review> Reviews { get; set; }
+        public DbSet<Payment> Payments { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly (typeof(ApoSystemDbContext).Assembly); 
