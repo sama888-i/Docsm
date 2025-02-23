@@ -423,7 +423,8 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date",
+              "example": "yyyy-MM-dd"
             }
           },
           {
@@ -688,7 +689,8 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date",
+              "example": "yyyy-MM-dd"
             }
           },
           {
@@ -1027,11 +1029,13 @@
           },
           "startTime": {
             "type": "string",
-            "format": "time"
+            "format": "time",
+            "example": "HH:mm:ss"
           },
           "endTime": {
             "type": "string",
-            "format": "time"
+            "format": "time",
+            "example": "HH:mm:ss"
           }
         },
         "additionalProperties": false
@@ -1198,11 +1202,13 @@
           },
           "startTime": {
             "type": "string",
-            "format": "time"
+            "format": "time",
+            "example": "HH:mm:ss"
           },
           "endTime": {
             "type": "string",
-            "format": "time"
+            "format": "time",
+            "example": "HH:mm:ss"
           }
         },
         "additionalProperties": false

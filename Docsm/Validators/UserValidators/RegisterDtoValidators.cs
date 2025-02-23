@@ -28,6 +28,7 @@ namespace Docsm.Validators.UserValidators
               .MaximumLength(32).WithMessage("Password length cannot be more than 32")
               .MinimumLength(4).WithMessage("Password length cannot be less than 4");
 
+
         }
 
     }

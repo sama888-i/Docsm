@@ -2,10 +2,11 @@ using Docsm.DataAccess;
 using Docsm.Extensions;
 using Docsm.Helpers;
 using Docsm.Models;
-using FluentValidation.AspNetCore;
 using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
 using System.Text.Json.Serialization;
 
@@ -22,8 +23,8 @@ namespace Docsm
             builder.Services.AddControllers()
                 .AddJsonOptions(options =>
                 {
-                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-                
+                    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+
                 });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -50,6 +51,18 @@ namespace Docsm
                         Array.Empty<string>()
                     }
                 });
+                opt.MapType<DateTime>(() => new OpenApiSchema
+                {
+                    Type = "string",
+                    Format = "date",
+                    Example = new OpenApiString("yyyy-MM-dd")
+                });
+                opt.MapType<TimeOnly>(() => new OpenApiSchema
+                {
+                    Type = "string",
+                    Format = "time",
+                    Example = new OpenApiString("HH:mm:ss")
+                });
             });
             builder.Services.AddDbContext<ApoSystemDbContext>(opt =>
             {
@@ -73,7 +86,7 @@ namespace Docsm
 
             builder.Services.AddAuth(builder.Configuration);
             builder.Services.AddJwtOptions(builder.Configuration);
-            builder .Services.AddSmtpOptions(builder.Configuration);
+            builder.Services.AddSmtpOptions(builder.Configuration);
             builder.Services.AddStripeOptions(builder.Configuration);
             builder.Services.AddServices();
             builder.Services.AddHttpContextAccessor();

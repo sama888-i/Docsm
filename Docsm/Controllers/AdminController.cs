@@ -63,8 +63,13 @@ namespace Docsm.Controllers
                 x.User.Name,
                 x.User.Surname,
                 x.User.ProfileImageUrl,
+                x.SpecialtyId,
                 x.Adress ,
                 x.ClinicName ,
+                x.AboutMe,
+                AverageRating = x.Reviews.Any(r => r.Rating.HasValue)
+                ? x.Reviews.Where(r => r.Rating.HasValue).Average(r => r.Rating.Value)
+                : 0,
                 Status = x.DoctorStatus.ToString()  
             }).ToListAsync();
 

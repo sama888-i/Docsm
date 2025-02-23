@@ -80,8 +80,8 @@ namespace Docsm.Services.Implements
         public async Task<string> CancelAppointmentAsync(int appointmentId)
         {
             var appointment = await _context.Appointments.FindAsync(appointmentId);
-            if (appointment == null )
-                throw new Exception("Görüş tapılmadı ");
+            if (appointment == null)
+                throw new NotFoundException<Appointment>();
             if (appointment.Status != AppointmentStatus.Pending)
                 throw new Exception("Bu gorus artiq tesdiqlenib");
 
@@ -91,6 +91,21 @@ namespace Docsm.Services.Implements
             await _context.SaveChangesAsync();
 
             return ("Görüş ləğv edildi və odenis geri qaytarıldı.");
+        }
+        public async Task<string>CompleteAppointmentAsync(int appointmentId)
+        {
+            var appointment = await _context.Appointments.FindAsync(appointmentId);
+            if(appointment == null )
+                throw new NotFoundException<Appointment>();
+            if (appointment.Status == AppointmentStatus.Confirmed)
+            {
+                appointment.Status = AppointmentStatus.Completed;
+                await _context.SaveChangesAsync();
+                return ("Gorus tamamlandi");
+
+            }
+            return("Yanliz qebul edilmis gorusler tamam lana biler");
+          
         }
     }
 }

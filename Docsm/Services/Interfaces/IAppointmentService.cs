@@ -7,5 +7,6 @@ namespace Docsm.Services.Interfaces
         Task<string> CreateAppointmentAsync( AppointmentCreateDto dto);
         Task<string> ConfirmAppointmentAsync(int appointmentId);
         Task<string> CancelAppointmentAsync(int appointmentId);
+        Task<string> CompleteAppointmentAsync(int appointmentId);
     }
 }

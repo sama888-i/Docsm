@@ -13,6 +13,7 @@ namespace Docsm.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles ="Admin")]
     public class SpecialtyController(ISpecialtyService _service) : ControllerBase
     {
         [HttpGet]

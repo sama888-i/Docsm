@@ -28,9 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Validators\AppointmentValidators\" />
-    <Folder Include="Validators\TimeScheduleValidator\" />
-    <Folder Include="Validators\PatientValidators\" />
     <Folder Include="wwwroot\images\doctors\" />
     <Folder Include="wwwroot\images\patients\" />
     <Folder Include="wwwroot\images\specialties\" />

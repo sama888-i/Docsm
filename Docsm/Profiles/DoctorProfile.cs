@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Docsm.DTOs.DoctorDtos;
 using Docsm.Models;
+using System.Data;
 
 namespace Docsm.Profiles
 {
@@ -19,7 +20,7 @@ namespace Docsm.Profiles
                 .ForMember(d => d.PhoneNumber, opt => opt.MapFrom(s => s.User.PhoneNumber))
                 .ForMember(d => d.Gender, opt => opt.MapFrom(s => s.User.Gender))
                 .ForMember(d => d.DateOfBirth, opt => opt.MapFrom(s => s.User.DateOfBirth))
-                .ForMember(d => d.ProfileImageUrl, opt => opt.MapFrom(s => s.User.ProfileImageUrl));
+                .ForMember(d => d.ProfileImageUrl, opt => opt.MapFrom(s => s.User.ProfileImageUrl));            
         }
 
     

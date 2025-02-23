@@ -84,5 +84,23 @@ namespace Docsm.Services.Implements
             _context.Patients.Remove(patient);
             await _context.SaveChangesAsync();
         }
+        public async Task GetPatientAppointmentsAsync(int patientId)
+        {
+            var appointment = await _context.Appointments.Include(x=>x.PaymentIntentId)
+                .Where(x => x.PatientId == patientId)
+                .Select(x =>new
+                {
+                    x.Id,
+                    x.Status,                   
+                    Doctor = new 
+                    {
+                        x.Doctor.User.Name,
+                        x.Doctor.User.Surname,
+                        x.Doctor.User.ProfileImageUrl,
+                        SpecialtyName= x.Doctor.Specialty.Name 
+                    }
+                }).ToListAsync();
+            
+        }
     }
 }
