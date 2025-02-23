@@ -104,7 +104,7 @@ namespace Docsm.Controllers
 
             if (string.IsNullOrEmpty(email) ||code<=0)
             {
-                return BadRequest("Məlumatlar düzgün deyil.");
+                return BadRequest("The information is incorrect.");
             }
             if (!_cache.TryGetValue(email, out int cachedCode) || cachedCode != code)
             {
@@ -118,7 +118,7 @@ namespace Docsm.Controllers
             user!.EmailConfirmed = true;
             await _userManager.UpdateAsync(user);
             _cache.Remove(email);
-            return Ok("Email tesdiqlendi");
+            return Ok("Email has been confirmed.");
             
 
         }
@@ -132,8 +132,8 @@ namespace Docsm.Controllers
             {
                 throw new NotFoundException<User>();
             }
-            await _service.SendResetPasswordAsync(user.Email);
-            return Ok("Emaile sifrenin sifirlanmasi ucun kod gonderildi");
+            await _service.SendResetPasswordAsync(user.Email!);
+            return Ok("A code for resetting the password has been sent to the email.");
         }
 
 
@@ -143,7 +143,7 @@ namespace Docsm.Controllers
         {
             if (string.IsNullOrEmpty(dto.Email) || dto.Code <= 0 || string.IsNullOrEmpty(dto.NewPassword))
             {
-                return BadRequest("Məlumatlar düzgün deyil.");
+                return BadRequest("The information is incorrect.");
             }
 
             if (!_cache.TryGetValue(dto.Email, out int cachedCode)||cachedCode!=dto.Code)
@@ -161,10 +161,10 @@ namespace Docsm.Controllers
             if (result.Succeeded)
             {
                 _cache.Remove(dto.Email);
-                return Ok("Şifrə uğurla sıfırlandı.");
+                return Ok("Password successfully reset.");
             }
 
-            return BadRequest("Şifrə sıfırlama uğursuz oldu.");
+            return BadRequest("Password reset failed.");
         }
         
     }

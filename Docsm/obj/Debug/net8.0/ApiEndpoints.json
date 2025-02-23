@@ -1,6 +1,46 @@
 [
   {
     "ContainingType": "Docsm.Controllers.AdminController",
+    "Method": "GetAllReviewsForAdmin",
+    "RelativePath": "api/Admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Docsm.DTOs.ReviewDtos.AdminReviewDto, Docsm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AdminController",
+    "Method": "GetAllPatients",
+    "RelativePath": "api/Admin/AllPatients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AdminController",
+    "Method": "GetAllAppointments",
+    "RelativePath": "api/Admin/Appointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AdminController",
     "Method": "ApproveDoctor",
     "RelativePath": "api/Admin/ApproveDoctor",
     "HttpMethod": "POST",
@@ -45,6 +85,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AdminController",
+    "Method": "GetAllTransaction",
+    "RelativePath": "api/Admin/Transaction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -256,6 +306,22 @@
   },
   {
     "ContainingType": "Docsm.Controllers.DoctorController",
+    "Method": "GetDoctorAppointment",
+    "RelativePath": "api/Doctor/Appointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.DoctorController",
     "Method": "CreateOrUpdate",
     "RelativePath": "api/Doctor/DoctorProfile",
     "HttpMethod": "POST",
@@ -318,6 +384,11 @@
         "IsRequired": false
       },
       {
+        "Name": "ClinicAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "Image",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -326,8 +397,18 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Docsm.Controllers.DoctorController",
+    "Method": "GetDoctorDashboardReviews",
+    "RelativePath": "api/Doctor/ReviewForDoctorDashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Docsm.Controllers.DoctorScheduleController",
-    "Method": "GetAllSpecialties",
+    "Method": "GetAllSchedule",
     "RelativePath": "api/DoctorSchedule",
     "HttpMethod": "GET",
     "IsController": true,
@@ -438,6 +519,22 @@
   },
   {
     "ContainingType": "Docsm.Controllers.PatientController",
+    "Method": "GetPatientAppointment",
+    "RelativePath": "api/Patient/Appointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.PatientController",
     "Method": "CreateOrUpdate",
     "RelativePath": "api/Patient/PatientProfile",
     "HttpMethod": "POST",
@@ -541,23 +638,24 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Docsm.Controllers.ReviewController",
-    "Method": "GetAllReview",
-    "RelativePath": "api/Review/For Admin",
+    "ContainingType": "Docsm.Controllers.SearchController",
+    "Method": "SearchDoctor",
+    "RelativePath": "api/Search",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Docsm.Controllers.ReviewController",
-    "Method": "GetDoctorDashboardReviews",
-    "RelativePath": "api/Review/For DoctorDashboard",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "specialtyId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "gender",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

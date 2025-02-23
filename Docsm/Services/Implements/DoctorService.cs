@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Docsm.DataAccess;
+using Docsm.DTOs.AppointmentDtos;
 using Docsm.DTOs.DoctorDtos;
+using Docsm.DTOs.ReviewDtos;
 using Docsm.Exceptions;
 using Docsm.Extensions;
 using Docsm.Helpers.Enums.Status;
@@ -25,7 +27,7 @@ namespace Docsm.Services.Implements
             if (!await _context.Specialties.AnyAsync(x => x.Id == dto.SpecialtyId))
                 throw new NotFoundException<Specialty>();
 
-            string? userId = _acc.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+            var userId = _userManager.GetUserId(_acc.HttpContext.User);
             if (string.IsNullOrEmpty(userId))
                 throw new UnauthorizedAccessException<User>();
 
@@ -91,6 +93,52 @@ namespace Docsm.Services.Implements
                 throw new NotFoundException<Doctor>();
             return _mapper.Map<DoctorGetDto>(doctor);
         }
+        public async Task<List<ReviewGetDto>> GetDoctorDashboardReviewsAsync()
+        {
+            var userId = _userManager.GetUserId(_acc.HttpContext.User);
+            if (string.IsNullOrEmpty(userId))
+                throw new UnauthorizedAccessException<User>();
 
+            var doctor = await _context.Doctors.FirstOrDefaultAsync(p => p.UserId == userId);
+            if (doctor == null)
+                throw new NotFoundException<Doctor>();
+
+            var reviews = await _context.Reviews
+                .Where(r => r.DoctorId == doctor.Id)
+                .Include(r => r.Patient)
+                    .ThenInclude(r => r.User)
+                .Select(r => new ReviewGetDto
+                {
+                    Id = r.Id,
+                    PatientFullname = $"{r.Patient.User.Name} {r.Patient.User.Surname}",
+                    PatientImage = r.Patient.User.ProfileImageUrl,
+                    Comment = r.Comment,
+                    Rating = r.Rating
+                }).ToListAsync();
+            return reviews;
+        }
+        public async Task<List<AppointmentGetDtoForDoctor>> GetDoctorAppointmentsAsync(int doctorId)
+        {
+           
+            var appointments = await _context.Appointments
+            .Include(x => x.Patient)
+                .ThenInclude(x => x.User)
+            .Include(x => x.Doctor)
+                .ThenInclude(x => x.User)
+            .Include(x => x.DoctorTimeSchedule)
+            .Include(x => x.Payment)
+            .Where(x => x.DoctorId == doctorId)  
+            .Select(x => new AppointmentGetDtoForDoctor
+            {
+                PatientName = x.Patient.User.Name,
+                PatientImage = x.Patient.User.ProfileImageUrl,
+                AppointmentDate = x.DoctorTimeSchedule.AppointmentDate,
+                Amount = x.Payment != null ? x.Payment.Amount : 0m,
+                Status = x.Status
+            }).ToListAsync();
+
+            return appointments;
+            
+        }
     }
 }

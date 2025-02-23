@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Docsm.DataAccess;
+using Docsm.DTOs.AppointmentDtos;
 using Docsm.DTOs.DoctorDtos;
 using Docsm.DTOs.PatientDtos;
 using Docsm.Exceptions;
@@ -88,19 +89,43 @@ namespace Docsm.Services.Implements
         {
             var appointment = await _context.Appointments
                 .Where(x => x.PatientId == patientId)
-                .Select(x =>new
+                .Select(x => new
                 {
                     x.Id,
-                    x.Status,                   
-                    Doctor = new 
+                    x.Status,
+                    Doctor = new
                     {
                         x.Doctor.User.Name,
                         x.Doctor.User.Surname,
                         x.Doctor.User.ProfileImageUrl,
-                        SpecialtyName= x.Doctor.Specialty.Name 
-                    }
+                        SpecialtyName = x.Doctor.Specialty.Name
+                    },
+                    
                 }).ToListAsync();
             
+        }
+        public async Task<List<AppointmentGetDtoForPatient>> GetPatientAppointmentAsync(int patientId)
+        {
+
+            var appointments = await _context.Appointments
+            .Include(x => x.Patient)
+                .ThenInclude(x => x.User)
+            .Include(x => x.Doctor)
+                .ThenInclude(x => x.User)
+            .Include(x => x.DoctorTimeSchedule)
+            .Include(x => x.Payment)
+            .Where(x => x.PatientId  == patientId)
+            .Select(x => new AppointmentGetDtoForPatient 
+            {
+                DoctorName = x.Doctor.User.Name,
+                DoctorImage = x.Doctor.User.ProfileImageUrl,
+                AppointmentDate = x.DoctorTimeSchedule.AppointmentDate,
+                Amount = x.Payment != null ? x.Payment.Amount : 0m,
+                Status = x.Status
+            }).ToListAsync();
+            
+            return appointments;
+
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Docsm.Controllers
     public class DoctorScheduleController(ITimeScheduleService _service) : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetAllSpecialties(int doctorId)
+        public async Task<IActionResult> GetAllSchedule(int doctorId)
         {
 
             return Ok(await _service.GetAllSchedulesAsync(doctorId));

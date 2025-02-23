@@ -1,4 +1,5 @@
-﻿using Docsm.DTOs.DoctorDtos;
+﻿using Docsm.DTOs.AppointmentDtos;
+using Docsm.DTOs.DoctorDtos;
 using Docsm.DTOs.PatientDtos;
 
 namespace Docsm.Services.Interfaces
@@ -9,5 +10,6 @@ namespace Docsm.Services.Interfaces
         Task<GetPatientProfileDto> GetByIdAsync(int id);
         Task ProfileCreateOrUpdateAsync(ProfileCreateOrUpdateDto dto);
         Task DeleteAsync(int id);
+        Task<List<AppointmentGetDtoForPatient>> GetPatientAppointmentAsync(int patientId);
     }
 }

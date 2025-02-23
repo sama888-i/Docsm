@@ -1,5 +1,6 @@
 ﻿using Docsm.DTOs.ReviewDtos;
 using Docsm.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace Docsm.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ReviewController(IReviewService _service) : ControllerBase
     {
        [HttpPost]
@@ -20,24 +22,14 @@ namespace Docsm.Controllers
        {
           return Ok(await _service.GetDoctorReviewsAsync(doctorId));
        }
-       [HttpGet("For Admin")]
-       public async Task<IActionResult> GetAllReview()
-       {
-           
-            return Ok(await _service.GetAllReviewsForAdminAsync());
-       }
+      
        [HttpDelete]
        public async Task<IActionResult> DeleteReview(int reviewId)
        {
             await _service.DeleteReviewAsync(reviewId);
             return Ok();
        }
-       [HttpGet("For DoctorDashboard")]
-        public async Task<IActionResult> GetDoctorDashboardReviews()
-        {
-           
-            return Ok(await _service.GetDoctorDashboardReviewsAsync());
-        }
+      
 
     }
 }

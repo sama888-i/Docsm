@@ -2,6 +2,7 @@
 using Docsm.DTOs.PatientDtos;
 using Docsm.Extensions;
 using Docsm.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using static Docsm.Exceptions.ImageException;
@@ -10,6 +11,7 @@ namespace Docsm.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Patient")]
     public class PatientController(IPatientService _service) : ControllerBase
     {
         [HttpGet]
@@ -45,6 +47,13 @@ namespace Docsm.Controllers
         {
             await _service.DeleteAsync(id);
             return Ok();
+        }
+        
+        [HttpGet("Appointments")]
+        public async Task<IActionResult> GetPatientAppointment(int patientId)
+        {
+
+            return Ok(await _service.GetPatientAppointmentAsync(patientId));
         }
     }
 }

@@ -15,6 +15,7 @@ namespace Docsm.DTOs.DoctorDtos
         public string? AboutMe { get; set; }
         public string? Services { get; set; }
         public string? ClinicName { get; set; }
+        public string? ClinicAddress { get; set; }
         public IFormFile? Image { get; set; }
 
     }
