@@ -70,7 +70,7 @@
         }
       }
     },
-    "/api/Admin": {
+    "/api/Admin/GetReviews": {
       "get": {
         "tags": [
           "Admin"
@@ -965,7 +965,7 @@
           }
         }
       },
-      "delete": {
+      "put": {
         "tags": [
           "Review"
         ],
@@ -973,6 +973,48 @@
           {
             "name": "reviewId",
             "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Review/{reviewId}": {
+      "delete": {
+        "tags": [
+          "Review"
+        ],
+        "parameters": [
+          {
+            "name": "reviewId",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -1007,6 +1049,18 @@
               "$ref": "#/components/schemas/Genders"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Search/top-doctors": {
+      "get": {
+        "tags": [
+          "Search"
         ],
         "responses": {
           "200": {
@@ -1064,7 +1118,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Specialty/{id}": {
       "delete": {
         "tags": [
           "Specialty"
@@ -1072,7 +1128,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -1091,15 +1148,9 @@
         ],
         "parameters": [
           {
-            "name": "Name",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -1112,6 +1163,9 @@
               "schema": {
                 "type": "object",
                 "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
                   "Image": {
                     "type": "string",
                     "format": "binary"
@@ -1119,6 +1173,9 @@
                 }
               },
               "encoding": {
+                "Name": {
+                  "style": "form"
+                },
                 "Image": {
                   "style": "form"
                 }
@@ -1126,6 +1183,27 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Specialty"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1342,7 +1420,8 @@
           },
           "dateOfBirth": {
             "type": "string",
-            "format": "date"
+            "format": "date",
+            "example": "yyyy-MM-dd"
           },
           "gender": {
             "$ref": "#/components/schemas/Genders"
@@ -1382,6 +1461,23 @@
             "nullable": true
           },
           "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReviewUpdateDto": {
+        "type": "object",
+        "properties": {
+          "rating": {
+            "maximum": 5,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "comment": {
+            "maxLength": 500,
             "type": "string",
             "nullable": true
           }

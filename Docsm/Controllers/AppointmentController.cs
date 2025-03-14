@@ -47,6 +47,7 @@ namespace Docsm.Controllers
             var result=await _service.CompleteAppointmentAsync(appointmentId);
             return Ok(result);
         }
+
         
     }
 }

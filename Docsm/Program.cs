@@ -1,4 +1,5 @@
 using Docsm.DataAccess;
+using Docsm.Exceptions;
 using Docsm.Extensions;
 using Docsm.Helpers;
 using Docsm.Models;
@@ -83,7 +84,7 @@ namespace Docsm
             builder.Services.AddFluentValidationAutoValidation()
                 .AddFluentValidationClientsideAdapters();
             builder.Services.AddValidatorsFromAssemblyContaining<Program>();
-
+           
             builder.Services.AddAuth(builder.Configuration);
             builder.Services.AddJwtOptions(builder.Configuration);
             builder.Services.AddSmtpOptions(builder.Configuration);
@@ -109,16 +110,18 @@ namespace Docsm
                     opt.EnablePersistAuthorization();
                 });
             }
+          
             SeedExtension.UseUserSeed(app).Wait();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseCors("AllowAll");
             app.UseAuthentication();
-
+            app.UseMiddleware<CustomExceptionMiddleware>();
             app.UseAuthorization();
 
 
             app.MapControllers();
-            app.UseCors("AllowAll");
+           
 
             app.Run();
         }

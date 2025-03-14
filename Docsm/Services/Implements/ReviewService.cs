@@ -56,8 +56,29 @@ namespace Docsm.Services.Implements
             await _context.SaveChangesAsync();
 
         }
+        public async Task UpdateReviewAsync(int reviewId, ReviewUpdateDto dto)
+        {
+            var userId = _userManager.GetUserId(_acc.HttpContext.User);
+            if (string.IsNullOrEmpty(userId))
+                throw new UnauthorizedAccessException<User>();
 
-       
+            var patient = await _context.Patients.FirstOrDefaultAsync(p => p.UserId == userId);
+            if (patient == null)
+                throw new NotFoundException<User>();
+
+            var review = await _context.Reviews
+                .FirstOrDefaultAsync(r => r.Id == reviewId && r.PatientId == patient.Id);
+
+            if (review == null)
+                throw new NotFoundException<Review>();
+
+            review.Rating = dto.Rating;
+            review.Comment = dto.Comment;
+
+            _context.Reviews.Update(review);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<List<ReviewGetDto>> GetDoctorReviewsAsync(int doctorId)
         {
             var reviews = await _context.Reviews

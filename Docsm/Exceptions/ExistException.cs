@@ -13,7 +13,7 @@
     }
     public class ExistException<T> : ExistException 
     {
-        public ExistException():base (typeof(T).Name +"is exist")
+        public ExistException():base (typeof(T).Name +" is exist")
         {
 
         }

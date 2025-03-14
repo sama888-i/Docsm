@@ -9,6 +9,7 @@ namespace Docsm.Services.Interfaces
         Task AddReviewAsync(ReviewCreateDto dto);
         Task DeleteReviewAsync(int reviewId);      
         Task<List<ReviewGetDto>> GetDoctorReviewsAsync(int doctorId);
-        
+        Task UpdateReviewAsync(int reviewId, ReviewUpdateDto dto);
+
     }
 }

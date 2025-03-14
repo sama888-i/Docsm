@@ -1,26 +1,6 @@
 [
   {
     "ContainingType": "Docsm.Controllers.AdminController",
-    "Method": "GetAllReviewsForAdmin",
-    "RelativePath": "api/Admin",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Docsm.DTOs.ReviewDtos.AdminReviewDto, Docsm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Docsm.Controllers.AdminController",
     "Method": "GetAllPatients",
     "RelativePath": "api/Admin/AllPatients",
     "HttpMethod": "GET",
@@ -70,6 +50,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.AdminController",
+    "Method": "GetAllReviewsForAdmin",
+    "RelativePath": "api/Admin/GetReviews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Docsm.DTOs.ReviewDtos.AdminReviewDto, Docsm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Docsm.Controllers.AdminController",
@@ -477,7 +477,7 @@
   },
   {
     "ContainingType": "Docsm.Controllers.PatientController",
-    "Method": "GetAllDoctors",
+    "Method": "GetAllPatients",
     "RelativePath": "api/Patient",
     "HttpMethod": "GET",
     "IsController": true,
@@ -623,9 +623,9 @@
   },
   {
     "ContainingType": "Docsm.Controllers.ReviewController",
-    "Method": "DeleteReview",
+    "Method": "UpdateReview",
     "RelativePath": "api/Review",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -633,6 +633,27 @@
         "Name": "reviewId",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "Docsm.DTOs.ReviewDtos.ReviewUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.ReviewController",
+    "Method": "DeleteReview",
+    "RelativePath": "api/Review/{reviewId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reviewId",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -656,6 +677,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.SearchController",
+    "Method": "GetTopDoctors",
+    "RelativePath": "api/Search/top-doctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -692,7 +723,7 @@
   {
     "ContainingType": "Docsm.Controllers.SpecialtyController",
     "Method": "Delete",
-    "RelativePath": "api/Specialty",
+    "RelativePath": "api/Specialty/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -700,7 +731,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -708,7 +739,7 @@
   {
     "ContainingType": "Docsm.Controllers.SpecialtyController",
     "Method": "Update",
-    "RelativePath": "api/Specialty",
+    "RelativePath": "api/Specialty/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -726,7 +757,23 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Docsm.Controllers.SpecialtyController",
+    "Method": "GetSpecialty",
+    "RelativePath": "api/Specialty/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

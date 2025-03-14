@@ -12,13 +12,16 @@ namespace Docsm.Extensions
             {
                 var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
                 var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-                if (!roleManager.Roles.Any())
+                var roles = Enum.GetValues(typeof(Roles)).Cast<Roles>();
+               
+                foreach (var role in roles)
                 {
-                    foreach (Roles item in Enum.GetValues(typeof(Roles)))
+                    var roleName = role.ToString();
+                    if (!await roleManager.RoleExistsAsync(roleName))
                     {
-                       await roleManager.CreateAsync(new IdentityRole(item.ToString()));
+                        await roleManager.CreateAsync(new IdentityRole(roleName));
                     }
-                }
+                }               
                 if (!userManager.Users.Any(x => x.NormalizedUserName == "ADMIN"))
                 {
                     User user = new User
@@ -37,7 +40,9 @@ namespace Docsm.Extensions
                       
                         await userManager.AddToRoleAsync(user, nameof(Roles.Admin));
                     }
+                   
                 }
+               
             }
         }
     }

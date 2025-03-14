@@ -11,7 +11,7 @@ namespace Docsm.DTOs.AuthDtos
         public string Surname {  get; set; }
         [DataType (DataType.Password)]
         public string Password {  get; set; }
-        public DateOnly DateOfBirth {  get; set; }
+        public DateTime  DateOfBirth {  get; set; }
         public Genders Gender { get; set; }
     }
 }

@@ -32,7 +32,8 @@ namespace Docsm.Helpers
                 new Claim(ClaimTypes.Gender ,user.Gender.ToString()),
                 new Claim(ClaimTypes.DateOfBirth ,user.DateOfBirth.ToString("yyyy-MM-dd")),
                
-                new Claim("FullName",user.Name+" "+user.Surname)
+                new Claim("FullName",user.Name+" "+user.Surname),
+               
 
             ];
 
@@ -40,7 +41,7 @@ namespace Docsm.Helpers
             var role = roles.FirstOrDefault();
             if (role != null)
             {
-                claims.Add(new Claim(ClaimTypes.Role, role));
+                claims.Add(new Claim("role", role));
             }
 
 

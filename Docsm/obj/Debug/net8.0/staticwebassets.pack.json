@@ -1,6 +1,806 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\appointment-list.html",
+      "PackagePath": "staticwebassets\\admin\\appointment-list.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\css\\feathericon.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\feathericon.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\MaterialIcons-Regular.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\MaterialIcons-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\MaterialIcons-Regular.html",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\MaterialIcons-Regular.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\MaterialIcons-Regular.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\MaterialIcons-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\feathericon.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\feathericon.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\feathericon.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\feathericon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\feathericon.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\feathericon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\feathericon.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\feathericon.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\feathericond41d.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\feathericond41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\fontawesome-webfont3e6e.html",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fontawesome-webfont3e6e.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\header.html",
+      "PackagePath": "staticwebassets\\admin\\assets\\header.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\doctors\\doctor-thumb-01.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\doctors\\doctor-thumb-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\doctors\\doctor-thumb-02.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\doctors\\doctor-thumb-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\doctors\\doctor-thumb-03.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\doctors\\doctor-thumb-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\doctors\\doctor-thumb-04.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\doctors\\doctor-thumb-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\doctors\\doctor-thumb-05.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\doctors\\doctor-thumb-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\doctors\\doctor-thumb-06.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\doctors\\doctor-thumb-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\doctors\\doctor-thumb-07.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\doctors\\doctor-thumb-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\doctors\\doctor-thumb-08.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\doctors\\doctor-thumb-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\doctors\\doctor-thumb-09.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\doctors\\doctor-thumb-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\doctors\\doctor-thumb-10.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\doctors\\doctor-thumb-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\img-01.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\img-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\logo-small.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\logo-small.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\logo-white.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\logo-white.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient10.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient11.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient12.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient13.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient14.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient15.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient6.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient7.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient8.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\patients\\patient9.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\patients\\patient9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\profiles\\avatar-01.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\profiles\\avatar-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\profiles\\avatar-02.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\profiles\\avatar-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\profiles\\avatar-03.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\profiles\\avatar-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\profiles\\avatar-04.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\profiles\\avatar-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\specialities\\specialities-01.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\specialities\\specialities-01.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\specialities\\specialities-02.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\specialities\\specialities-02.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\specialities\\specialities-03.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\specialities\\specialities-03.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\specialities\\specialities-04.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\specialities\\specialities-04.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\img\\specialities\\specialities-05.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\specialities\\specialities-05.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\admin.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\admin.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\chart.morris.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\chart.morris.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\form-validation.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\form-validation.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\jquery.maskedinput.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\jquery.maskedinput.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\mask.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\mask.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\js\\specialty.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\specialty.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\plugins\\datatables\\datatables.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\plugins\\datatables\\datatables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\plugins\\datatables\\datatables.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\plugins\\datatables\\datatables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\plugins\\datatables\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\plugins\\datatables\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\plugins\\morris\\morris.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\plugins\\morris\\morris.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\plugins\\morris\\morris.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\plugins\\morris\\morris.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\plugins\\raphael\\raphael.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\plugins\\raphael\\raphael.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\plugins\\slimscroll\\jquery.slimscroll.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\plugins\\slimscroll\\jquery.slimscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\assets\\sidebar.html",
+      "PackagePath": "staticwebassets\\admin\\assets\\sidebar.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\doctor-list.html",
+      "PackagePath": "staticwebassets\\admin\\doctor-list.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\index.html",
+      "PackagePath": "staticwebassets\\admin\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\patient-list.html",
+      "PackagePath": "staticwebassets\\admin\\patient-list.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\reviews.html",
+      "PackagePath": "staticwebassets\\admin\\reviews.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\specialities.html",
+      "PackagePath": "staticwebassets\\admin\\specialities.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\admin\\transactions-list.html",
+      "PackagePath": "staticwebassets\\admin\\transactions-list.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\css\\bootstrap-datetimepicker.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap-datetimepicker.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\fonts\\MaterialIcons-Regular.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\MaterialIcons-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\fonts\\MaterialIcons-Regular.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\MaterialIcons-Regular.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\fonts\\MaterialIcons-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\MaterialIcons-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\fonts\\MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-07.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-08.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-09.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-thumb-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-thumb-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-thumb-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-thumb-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-thumb-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-thumb-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-thumb-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-thumb-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-thumb-05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-thumb-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-thumb-06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-thumb-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-thumb-07.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-thumb-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-thumb-08.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-thumb-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-thumb-09.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-thumb-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\doctors\\doctor-thumb-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doctors\\doctor-thumb-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\features\\feature-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\features\\feature-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\features\\feature-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\features\\feature-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\features\\feature-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\features\\feature-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\features\\feature-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\features\\feature-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\features\\feature-05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\features\\feature-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\features\\feature-06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\features\\feature-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\features\\feature.png",
+      "PackagePath": "staticwebassets\\assets\\img\\features\\feature.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\footer-logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\footer-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\icon-01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon-01.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\icon-02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon-02.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\icon-03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon-03.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\img-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\img-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\img-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\img-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\img-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\location.png",
+      "PackagePath": "staticwebassets\\assets\\img\\location.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\login-banner.png",
+      "PackagePath": "staticwebassets\\assets\\img\\login-banner.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\patients\\patient9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\patients\\patient9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\search-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\search-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\search.png",
+      "PackagePath": "staticwebassets\\assets\\img\\search.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\specialities\\specialities-01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\specialities\\specialities-01.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\specialities\\specialities-02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\specialities\\specialities-02.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\specialities\\specialities-03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\specialities\\specialities-03.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\specialities\\specialities-04.png",
+      "PackagePath": "staticwebassets\\assets\\img\\specialities\\specialities-04.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\specialities\\specialities-05.png",
+      "PackagePath": "staticwebassets\\assets\\img\\specialities\\specialities-05.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\img\\video-call.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\video-call.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\js\\bootstrap-datetimepicker.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap-datetimepicker.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\js\\circle-progress.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\circle-progress.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\js\\profile-settings.js",
+      "PackagePath": "staticwebassets\\assets\\js\\profile-settings.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\js\\slick.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\bootstrap-tagsinput\\css\\bootstrap-tagsinput.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\bootstrap-tagsinput\\css\\bootstrap-tagsinput.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\bootstrap-tagsinput\\js\\bootstrap-tagsinput.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\bootstrap-tagsinput\\js\\bootstrap-tagsinput.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\dropzone\\dropzone.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\dropzone\\dropzone.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\dropzone\\dropzone.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\dropzone\\dropzone.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fancybox\\jquery.fancybox.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fancybox\\jquery.fancybox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fancybox\\jquery.fancybox.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fancybox\\jquery.fancybox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.html",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.html",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.html",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fullcalendar\\fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fullcalendar\\fullcalendar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fullcalendar\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fullcalendar\\fullcalendar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\fullcalendar\\jquery.fullcalendar.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fullcalendar\\jquery.fullcalendar.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\jquery-ui\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\jquery-ui\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\theia-sticky-sidebar\\ResizeSensor.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\theia-sticky-sidebar\\ResizeSensor.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\assets\\plugins\\theia-sticky-sidebar\\theia-sticky-sidebar.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\theia-sticky-sidebar\\theia-sticky-sidebar.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\doctor-register.html",
+      "PackagePath": "staticwebassets\\doctor-register.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\email-confirm.html",
+      "PackagePath": "staticwebassets\\email-confirm.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\forgot-password.html",
+      "PackagePath": "staticwebassets\\forgot-password.html"
+    },
+    {
       "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\doctors\\3bqznxtz.e1q.jpg",
       "PackagePath": "staticwebassets\\images\\doctors\\3bqznxtz.e1q.jpg"
     },
@@ -33,6 +833,10 @@
       "PackagePath": "staticwebassets\\images\\doctors\\ski0i53u.li2.jpg"
     },
     {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\patients\\3xrosrq5.xlt.jpg",
+      "PackagePath": "staticwebassets\\images\\patients\\3xrosrq5.xlt.jpg"
+    },
+    {
       "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\patients\\q3ifwbgs.lff.jpg",
       "PackagePath": "staticwebassets\\images\\patients\\q3ifwbgs.lff.jpg"
     },
@@ -45,20 +849,64 @@
       "PackagePath": "staticwebassets\\images\\specialties\\3ifxq3u0.t2a.png"
     },
     {
-      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\avmyc1ys.slr.png",
-      "PackagePath": "staticwebassets\\images\\specialties\\avmyc1ys.slr.png"
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\iqpgmuh3.car.png",
+      "PackagePath": "staticwebassets\\images\\specialties\\iqpgmuh3.car.png"
     },
     {
-      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\kpctaktf.ggh.png",
-      "PackagePath": "staticwebassets\\images\\specialties\\kpctaktf.ggh.png"
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\l3muhg55.agn.png",
+      "PackagePath": "staticwebassets\\images\\specialties\\l3muhg55.agn.png"
     },
     {
-      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\wcjsce1g.jow.png",
-      "PackagePath": "staticwebassets\\images\\specialties\\wcjsce1g.jow.png"
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\ofyebjaa.gij.png",
+      "PackagePath": "staticwebassets\\images\\specialties\\ofyebjaa.gij.png"
     },
     {
-      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\images\\specialties\\yw5jj04g.ays.png",
-      "PackagePath": "staticwebassets\\images\\specialties\\yw5jj04g.ays.png"
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\js\\auth.js",
+      "PackagePath": "staticwebassets\\js\\auth.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\js\\header.js",
+      "PackagePath": "staticwebassets\\js\\header.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\js\\loadTemplate.js",
+      "PackagePath": "staticwebassets\\js\\loadTemplate.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\js\\search.js",
+      "PackagePath": "staticwebassets\\js\\search.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\partials\\footer.html",
+      "PackagePath": "staticwebassets\\partials\\footer.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\partials\\header.html",
+      "PackagePath": "staticwebassets\\partials\\header.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\register.html",
+      "PackagePath": "staticwebassets\\register.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\reset-password.html",
+      "PackagePath": "staticwebassets\\reset-password.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\Docsm\\Docsm\\wwwroot\\search.html",
+      "PackagePath": "staticwebassets\\search.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Docsm.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

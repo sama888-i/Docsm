@@ -13,36 +13,44 @@ namespace Docsm.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     public class SpecialtyController(ISpecialtyService _service) : ControllerBase
     {
         [HttpGet]
         [AllowAnonymous]
         public async Task<IActionResult> GetAllSpecialties()
         {
-           
+
             return Ok(await _service.GetAllSpecialtiesAsync());
-        }
+        }     
+       
         [HttpPost]
         [Consumes("multipart/form-data")]
-        public async Task<IActionResult>Create(SpecialtyCreateDto dto)
-        {           
+        public async Task<IActionResult> Create(SpecialtyCreateDto dto)
+        {
             await _service.CreateSpecialtyAsync(dto);
-            return Ok();
+            return Ok(new { message = "İxtisas uğurla əlavə olundu!" });
 
         }
-        [HttpDelete]
-        public async Task<IActionResult>Delete(int id)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
         {
             await _service.DeleteSpecialtyAsync(id);
             return Ok();
         }
-        [HttpPut]
+        [HttpPut("{id}")]
         [Consumes("multipart/form-data")]
-        public async Task<IActionResult>Update(SpecialtyUpdateDto dto,int id)
+        public async Task<IActionResult>Update([FromForm]SpecialtyUpdateDto dto,int id)
         {
-            await _service.UpdateSpecialtyAsync(dto,id);
-            return Ok();
+            
+             var updateSpecialty= await _service.UpdateSpecialtyAsync(dto,id);
+            return Ok(updateSpecialty);
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetSpecialty(int id)
+        {
+            var specialty = await _service.GetByIdAsync(id);           
+            return Ok(specialty);
         }
     }
 }

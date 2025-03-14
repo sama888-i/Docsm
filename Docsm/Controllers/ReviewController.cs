@@ -23,12 +23,18 @@ namespace Docsm.Controllers
           return Ok(await _service.GetDoctorReviewsAsync(doctorId));
        }
       
-       [HttpDelete]
-       public async Task<IActionResult> DeleteReview(int reviewId)
+       [HttpDelete("{reviewId}")]
+       public async Task<IActionResult> DeleteReview( int reviewId)
        {
             await _service.DeleteReviewAsync(reviewId);
             return Ok();
        }
+       [HttpPut]
+       public async Task<IActionResult>UpdateReview(int reviewId, ReviewUpdateDto dto)
+        {
+            await _service.UpdateReviewAsync(reviewId, dto);
+            return Ok();
+        }
       
 
     }

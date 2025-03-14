@@ -10,6 +10,7 @@
         public decimal Amount { get; set; }
         public string Currency { get; set; }
         public string PaymentStatus { get; set; }
-      
+        public DateOnly AppointmentDate { get; set; }
+
     }
 }

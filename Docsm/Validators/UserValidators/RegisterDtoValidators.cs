@@ -28,7 +28,15 @@ namespace Docsm.Validators.UserValidators
               .MaximumLength(32).WithMessage("Password length cannot be more than 32")
               .MinimumLength(4).WithMessage("Password length cannot be less than 4");
 
-
+            RuleFor(x => x.DateOfBirth)
+           .NotEmpty().WithMessage("Date of birth cannot be empty")
+           .Must(BeAtLeast18YearsOld).WithMessage("User must be at least 18 years old");
+        }
+        
+        private bool BeAtLeast18YearsOld(DateTime   dateOfBirth)
+        {
+            var age = DateTime.Now.Year - dateOfBirth.Year;
+            return age >= 18;
         }
 
     }

@@ -20,7 +20,7 @@ namespace Docsm.Controllers
     public class AdminController(ApoSystemDbContext _context,IEmailService _service) : ControllerBase
     {
         [HttpPost("ApproveDoctor")]
-        public async Task<IActionResult>ApproveDoctor(int doctorId)
+        public async Task<IActionResult>ApproveDoctor([FromQuery] int doctorId)
         {
             var doctor=await _context.Doctors.Include(x=>x.User).FirstOrDefaultAsync(x=>x.Id==doctorId);
             if (doctor == null)
@@ -34,10 +34,10 @@ namespace Docsm.Controllers
             var subject = "Hekim profiliniz tesdiqlendi";
             var body = "Artiq  Pasiyent qebul ede bilersiz";
             await _service.SendEmailAsync(doctor.User.Email , subject, body);
-            return Ok();
+            return Ok(new { message = "Doctor approved successfully" });
         }
         [HttpPost("RejectDoctor")]
-        public async Task<IActionResult>RejectDoctor(int doctorId)
+        public async Task<IActionResult>RejectDoctor([FromQuery] int doctorId)
         {
             var doctor = await _context.Doctors.Include(x => x.User).FirstOrDefaultAsync(x => x.Id == doctorId);
             if (doctor == null)
@@ -51,7 +51,7 @@ namespace Docsm.Controllers
             var subject = "Hekim profiliniz tesdiqlenmedi";
             var body = "Isteyiniz qebul edilmedi,contactdan elaqe saxlayin";
             await _service.SendEmailAsync(doctor.User.Email, subject, body);
-            return Ok();
+            return Ok(new { message = "Doctor rejected successfully" });
         }
         [HttpGet("GetDoctors")]
         public async Task<IActionResult> GetDoctors(DoctorStatus? status)
@@ -70,7 +70,7 @@ namespace Docsm.Controllers
                 x.User.Surname,
                 x.User.ProfileImageUrl,
                 SpecialtyName=x.Specialty.Name,
-                x.Adress ,
+                x.ClinicAddress  ,
                 x.ClinicName ,
                 x.AboutMe,
                 AverageRating = x.Reviews.Any(r => r.Rating.HasValue)
@@ -81,7 +81,7 @@ namespace Docsm.Controllers
 
             return Ok(doctors);
         }
-        [HttpGet]
+        [HttpGet("GetReviews")]
         public async Task<List<AdminReviewDto>> GetAllReviewsForAdmin()
         {
             var reviews = await _context.Reviews
@@ -118,12 +118,13 @@ namespace Docsm.Controllers
             return Ok(patients );
         }
         [HttpGet("Transaction")]
+        [Authorize(Roles = "Admin,Patient,Doctor")]
         public async Task<IActionResult> GetAllTransaction()
         {
             var transaction = await _context.Payments
                 .Include(x => x.Appointment)
                   .ThenInclude(x => x.Patient)
-                .Include(x => x.Appointment.Doctor)
+                .Include(x => x.Appointment.Doctor)                
                 .Select(x => new TransactionDtoForAdmin
                 { 
                     TransactionId = x.Id ,
@@ -134,6 +135,7 @@ namespace Docsm.Controllers
                     Amount =x.Amount ,
                     Currency =x.Currency,
                     PaymentStatus =x.PaymentStatus.ToString(),
+                    AppointmentDate=x.Appointment.DoctorTimeSchedule.AppointmentDate 
 
 
                 }).ToListAsync();

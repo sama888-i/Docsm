@@ -64,7 +64,7 @@ namespace Docsm.Controllers
 
             if (!result.Succeeded) return BadRequest(result.Errors);        
             
-            await _userManager.AddToRoleAsync(user, nameof(Roles.Doctor ));   
+            await _userManager.AddToRoleAsync(user, nameof(Roles.Doctor));   
             
             await _context.SaveChangesAsync();
            
@@ -93,7 +93,7 @@ namespace Docsm.Controllers
                 return Unauthorized(new { message = "Username or Password is incorrect" });
             }         
             var token = await _jwtTokens.GenerateJwtToken(user);
-            return Ok(token);
+            return Ok(new { token });
         }
 
 
@@ -111,7 +111,7 @@ namespace Docsm.Controllers
                 throw new CodeInvalidException();
             }
             var user = await _userManager.FindByEmailAsync(email);
-            if (email == null)
+            if (user == null)
             {
                 throw new NotFoundException<User>();
             }

@@ -12,7 +12,7 @@
     }
     public class NotFoundException<T> : NotFoundException
     {
-        public NotFoundException() : base(typeof(T).Name + "not found")
+        public NotFoundException() : base(typeof(T).Name + " not found")
         {
 
         }

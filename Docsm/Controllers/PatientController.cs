@@ -15,12 +15,14 @@ namespace Docsm.Controllers
     public class PatientController(IPatientService _service) : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetAllDoctors()
+        [AllowAnonymous]
+        public async Task<IActionResult> GetAllPatients()
         {
 
             return Ok(await _service.GetAllAsync());
         }
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetById(int id)
         {
             var patient = await _service.GetByIdAsync(id);
